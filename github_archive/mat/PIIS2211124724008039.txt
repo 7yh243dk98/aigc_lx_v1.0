@@ -1,0 +1,1221 @@
+﻿Article
+Auditory entrainment coordinates cortical-BNSTNAc triple time locking to alleviate the depressive
+disorder
+Authors
+Xin Lv, Yuhan Wang, Yingying Zhang, ...,
+Yunhao Wu, Valerie Voon, Bomin Sun
+Correspondence
+ku.ca.mac@742vv.com (V.V.),
+bomin_sun@163.com (B.S.)
+In brief
+Lv et al. report synchronization induced
+by music that activates antidepressant
+responses in patients with depression.
+This study finds oscillatory triple time
+locking across the auditory cortex and
+extended amygdala, emphasizing the role
+of auditory entrainment in alleviating
+depressive symptoms and points out the
+critical pathway of music-modulated
+oscillations.
+Graphical abstract
+Highlights
+d Musical antidepressant effects are related to subjective
+enjoyment
+d Theta oscillations in the auditory area mediate the
+antidepressant effects induced by music
+d Identified triple temporal coupling pattern between the
+auditory cortex, BNST, and NAc
+d Auditory modulation can restore the triple temporal coupling
+in deficits
+ll
+Lv et al., 2024, Cell Reports 43, 114474
+August 27, 2024 ª 2024 The Author(s). Published by Elsevier Inc.
+https://doi.org/10.1016/j.celrep.2024.114474
+ll
+OPEN ACCESS
+Article
+Auditory entrainment coordinates
+cortical-BNST-NAc triple time locking
+to alleviate the depressive disorder
+Xin Lv,1,2,5 Yuhan Wang,1,2,5 Yingying Zhang,1,3,5 Shuo Ma,1 Jie Liu,1,2 Kuanghao Ye,1,2 Yunhao Wu,1,2 Valerie Voon,1,3,4,*
+and Bomin Sun1,2,6,*
+1Center of Functional Neurosurgery, Ruijin Hospital, Shanghai Jiao Tong University School of Medicine, Shanghai, China
+2Department of Neurosurgery, Ruijin Hospital, Shanghai Jiao Tong University School of Medicine, Shanghai, China
+3Neural and Intelligence Engineering Centre, Institute of Science and Technology for Brain-Inspired Intelligence, Fudan University, Shanghai
+200433, China
+4Department of Psychiatry, Addenbrookes Hospital, University of Cambridge, CB2 0QQ Cambridge, UK
+5These authors contributed equally
+6Lead contact
+*Correspondence: ku.ca.mac@742vv.com (V.V.), bomin_sun@163.com (B.S.)
+https://doi.org/10.1016/j.celrep.2024.114474
+SUMMARY
+Listening to music is a promising and accessible intervention for alleviating symptoms of major depressive
+disorder. However, the neural mechanisms underlying its antidepressant effects remain unclear. In this study
+on patients with depression, we used auditory entrainment to evaluate intracranial recordings in the bed nucleus of the stria terminalis (BNST) and nucleus accumbens (NAc), along with temporal scalp electroencephalogram (EEG). We highlight music-induced synchronization across this circuit. The synchronization initiates
+with temporal theta oscillations, subsequently inducing local gamma oscillations in the BNST-NAc circuit.
+Critically, the incorporated external entrainment induced a modulatory effect from the auditory cortex to
+the BNST-NAc circuit, activating the antidepressant response and highlighting the causal role of physiological entrainment in enhancing the antidepressant response. Our study explores the pivotal role of the auditory
+cortex and proposes a neural oscillation triple time-locking model, emphasizing the capacity of the auditory
+cortex to access the BNST-NAc circuit.
+INTRODUCTION
+Depression poses a significant global public health challenge,
+affecting approximately 4.4% of the world’s population, and is
+a leading cause of disability worldwide.1 Approximately 50% of
+patients with major depressive disorder (MDD) experience treatment-resistant depression (TRD), defined as a lack of response
+to conventional therapeutic interventions.2 Novel antidepressant
+treatments are urgently needed.
+In the non-pharmacological treatment of depression, music
+listening has emerged as an easily obtainable modulatory
+approach with wide-ranging potential applications.3–5 Music
+evokes emotions, making it a valuable tool for studying affective
+responses and their neural correlates.6 Recent advancements in
+the neuroscientific study of music-evoked emotions have
+enhanced our understanding of the neural underpinnings of human emotion.7 Music’s ability to modulate neural activity in
+subcortical brain structures via the auditory cortex suggests potential advancements in music-based treatments for psychiatric
+disorders linked to dysfunction in these areas.8–10 However, the
+response to music in TRD is typically suboptimal, with only a
+small proportion of patients showing any response to music.
+Music-induced emotion primarily engages the reward circuitry, with the bed nucleus of the stria terminalis (BNST), a
+component of the extended amygdala, playing a pivotal role in
+this circuit and participating in emotion-associated neural pathways.11,12 The BNST mediates reward-related behaviors such
+as mating, with its activation potently stimulating a desire for
+mating behavior in mice.13 In emotion processing, human imaging studies have shown that the amygdala and BNST have
+similar functional properties, including sensitivity to ambiguous
+threats.14 Both structures exhibit transient responses to threats
+and demonstrate increased activity during sustained threat
+exposure.15,16
+The nucleus accumbens (NAc) also plays a crucial role in the
+reward circuitry and is particularly sensitive to negative
+emotional signals.17 Functionally, the BNST and NAc form an integrated network within this circuitry.18 Anatomical studies have
+revealed that the GABAergic pathway from the BNST to the NAc
+is implicated in depression-related neural responses.14 Activating the BNST can enhance NAc responses, potentially mitigating negative emotional experiences.19 Early impact studies
+have linked music-induced emotions to activity in the BNSTNAc circuit.7,20,21
+Cell Reports 43, 114474, August 27, 2024 ª 2024 The Author(s). Published by Elsevier Inc.
+This is an open access article under the CC BY-NC license (http://creativecommons.org/licenses/by-nc/4.0/).
+1
+ll
+OPEN ACCESS
+Article
+The primary mediators through which music influences the
+reward circuitry are the auditory cortex and motor cortex. Music,
+encoded in the primary auditory cortex, coordinates neuronal
+activity and activates the reward circuitry, eliciting emotional responses. Martorell et al. confirmed that specific frequencies of
+auditory stimulation can entrain auditory cortical neurons, shifting them from spontaneous irregular activity to coordinated
+firing, resulting in neuroprotective effects.22
+Here, we aim to investigate how music listening influences
+subcortical nuclei in the reward circuitry via the auditory cortex.
+We do this by simultaneously recording temporal electroencephalogram (EEG) signals from the scalp and intracranial recordings
+from the BNST and NAc in patients with TRD. This approach offers unique insights into the mechanisms underlying the antidepressant effects and potential strategies for optimizing treatment
+to enhance patients’ responsiveness to auditory modulation.
+RESULTS
+Musical enjoyment differentiates the depression
+alleviation effect of music in TRD
+To explore the fundamental influence of music on emotions
+across various groups, we enrolled 23 patients with TRD and implanted electrodes in the BNST-NAc circuit for future MDD treatment via deep brain stimulation (DBS) (Figures S1A–S1D). With
+these electrodes and conventional scalp EEG, we could synchronously collect cortical-subcortical EEG signals. Since the
+primary cortical structure studied here is the auditory cortex,
+we concentrated on EEG signals in the temporal area.
+Acknowledging the potential impact of music familiarity,
+emotional content, and individual preferences on music-induced
+emotions, the 23 participants were divided based on music familiarity: unfamiliar (UF) condition and familiar (FA) condition.
+The UF group, comprising 13 participants, was used to investigate the influence of the emotional context of music on depressive mood. Participants’ preferences for music and their
+emotional responses were recorded using a visual analog scale.
+Interviews showed that they lacked a classical music listening
+history due to an Asian cultural background. Therefore, two classical music segments with distinct emotional contexts were chosen: Tchaikovsky’s Symphony No. 6, representing sadness, and
+the third movement of Beethoven’s Symphony No. 7, representing joy and excitement (Figure 1A).23,24 Patients were randomly
+assigned to two groups, each receiving a different music
+segment. We assessed depression symptom-related scores using a visual analog scale for depression (VAS-D) and visual
+analog scale for anxiety (VAS-A) both before and after music
+listening, alongside an enjoyment score for the music itself, visual analog scale for enjoyment (VAS-E).25–31 The scale
+results indicated no significant difference in depression symptoms between patients exposed to the two music schemes
+(Figures 1B, S2A, and 2B). This suggests that the therapeutic effects of music listening on patients with TRD may be independent of the emotional context, consistent with previous
+research.32
+Given the minimal influence of music’s emotional content, 10
+of the initial 23 participants were defined as the FA group. This
+group examined how subjective preferences affected emotions
+with familiar music. Researchers created an 8-segment playlist,
+ensuring no participant had heard the pieces in the past year.
+Participants listened to these segments three times daily for
+14 days to reach a similar familiarity level. They then rated their
+preferences, identifying their most and least favorite pieces
+(scoring highest/lowest, surpassing mean score ±1 standard
+deviation). In the experiment, participants were split into two
+subgroups: one listened to their most preferred music (high
+enjoyment, HE) and the other to their least preferred (low enjoyment, LE). The results showed a significant impact of subjective
+preference on music’s emotional effects.
+The FA group results indicate that music alleviates depressive
+mood based solely on individual enjoyment. To validate this in
+the UF group, we showed symptom improvement correlated
+with music enjoyment using linear analysis (Figure 1C). Based
+on these results, spatial clustering was performed using VAS-E
+scales and VAS-D and VAS-A improvements. The K-means algorithm initially clustered patients into high- and low-enjoyment
+groups, with high enjoyment linked to better depression symptom improvement. After grouping, a K-nearest neighbor algorithm determined the decision boundary between the groups
+(Figure 1D).
+The study design was as follows. After electrode implantation,
+participants were randomly divided into music listening groups,
+with BNST-NAc circuit and temporal EEG recorded. Post-session, they were assessed via a visual analog scale. Poor responders were reorganized for another session with exogenous
+sound modulation, with recordings and assessments repeated
+(Figure 1E).
+Bridging temporal EEG signal to musical appreciation
+via LSTM-based deep learning method
+We initially observed that an individual’s music enjoyment level
+was most strongly correlated with the emotional improvement
+induced by the music (as shown in Figure 1C). Based on these
+findings, we delved deeper into understanding the brain’s
+response to different levels of music appreciation. EEG data
+from the temporal region predominantly reflected activity in the
+primary auditory cortex.
+Before delving deeper, it was crucial to link auditory cortical
+activity with music appreciation, reflecting depressive mood
+improvement. Due to our small dataset, we integrated a
+similar external dataset. The naturalistic music EEG dataset
+included 20 healthy participants, 200 trials, 64-channel EEG
+data, and participants’ self-evaluations of music appreciation.33
+We analyzed the dataset using an long short-term memory
+(LSTM)-based recurrent neural network (RNN) due to its ability
+to handle long-term dependencies better than traditional
+RNNs. LSTM’s memory cells enable selective information retention and deletion, crucial for time-sensitive tasks (Figure 2A).
+Details regarding the partitioning of the training, test, and validation sets, along with the rationale, are provided in the STAR
+Methods. After 500 training batches, the model showed promising predictive metrics: approximately 84% accuracy, with
+recall and precision both at 83%, and satisfactory generalization
+abilities (Figure 2B). These results suggest that a basic deep
+learning framework can effectively predict music enjoyment
+levels from EEG waveforms. This supports the representation
+2
+Cell Reports 43, 114474, August 27, 2024
+Article
+ll
+OPEN ACCESS
+of multi-dimensional electrophysiological signals in music
+perception. It reaffirms previous high/low enjoyment classifications and sheds light on the critical role of temporal EEG in
+modulating music appreciation.
+Modulatory effects of music on temporal EEG based on
+synchronization
+As the patients had varying responses to music, the specific
+impact of music listening on temporal EEG remained an area
+of exploration. Through the analysis of waveforms and spectrograms, we observed induced theta activity in the temporal EEG
+of the HE subgroup, a phenomenon absent in the LE subgroup
+(Figures 3A and 3B). Quantitative statistical analysis of power
+in the theta frequency band confirmed this observation in both
+FA and UF subjects, with the HE subgroups exhibiting significantly stronger theta band power (Figure 3C). Furthermore, we
+observed a denser incidence, higher peak amplitude, and longer
+duration of theta waves in the HE group (Figures S2C–S2F).
+Given the modulatory role of theta activity, we hypothesized
+that enhanced theta band activity was associated with an
+increased modulatory effect of music on temporal EEG. Subsequently, we computed Z scores for both EEG and music waveforms for normalization and determined coherence, which was
+quantified by the weighted phase lag index (wPLI). The results
+indicated that the coherence between temporal EEG and music
+waveforms in the HE subgroups was notably higher, leading to a
+greater number of highlighted time windows (Figure 3D). This
+suggests that individuals with higher enjoyment of music
+A
+B E
+C
+D
+Figure 1. Musical enjoyment differentiates
+the depression alleviation effect of music in
+TRD
+(A) Patients underwent music treatment while
+recording LFPs in the BNST-NAc circuit and temporal EEG signals. Twenty-three subjects were first
+randomly divided into two groups with differentiated
+familiarity backgrounds. For the UF background, 13
+of 23 subjects received UF music that represented
+distinct emotional colors. The former group was
+named ‘‘sadness,’’ and the latter group was named
+‘‘excitement.’’ The remained 10 subjects received
+familiar (FA) background music, which was defined
+as being played continuously for 14 days to get a
+high and close level of familiarity among them. After
+14 days, participants were randomly divided into
+two groups. One group listened to their most enjoyed music, while the other group listened to their
+most disliked music.
+(B) Comparison of visual depression and anxiety
+scores on the VAS-D and VAS-A between the
+sadness and excitement groups after music
+listening. The results showed no significant difference in depression-related symptoms between the
+two groups (unpaired t test, n = 6 in excitement, n =
+7 in sadness, n = 5 in high enjoyment, n = 5 in low
+enjoyment). The central line in the graph represents
+the mean value, while the error bars indicate the
+standard error of the mean (SEM).
+(C) Correlation analysis between the degree of
+music appreciation and improvement in depressive symptoms (n = 13). There was a significant
+linear regression relationship between patients’
+VAS-E, VAS-D, and VAS-A before and after music
+listening, indicating that the antidepressant effect
+of music on TRD may be related to patients’ own
+level of music enjoyment. The central line represents the mean value, while the shaded area indicates the SEM.
+(D) Patients were re-grouped based on scale results. Using VAS-D, VAS-A, and VAS-E scores,
+combined with spatial clustering methods and
+K-nearest neighbors for decision boundary
+calculation.
+(E) Summary of the entire experimental procedure.
+Cell Reports 43, 114474, August 27, 2024
+3
+ll
+OPEN ACCESS
+Article
+B
+C
+exhibited greater synchronization between the music and EEG.
+Conversely, the LE subgroups likely experienced reduced
+musical engagement, as evidenced by lower synchronization.
+This phenomenon was observed in both FA and UF conditions.
+Temporal theta oscillations regulate BNST-NAc
+activation in responses to music enjoyment
+The activation of the reward circuitry represents a neural mechanism underlying the brain’s response to external sensory stimuli. In this study, we simultaneously recorded local field potential
+(LFP) activities from the BNST and NAc, both of which are components of the reward circuit. Gamma oscillations in LFPs may
+be recognized as biomarkers of functional synchronization within
+these nuclei.34 We observed induced gamma oscillations in the
+LFP waveforms of the BNST in the HE subgroups (Figure 4A). Us
+A
+Figure 2. Bridging temporal EEG signals to
+musical appreciation via an LSTM-based
+deep learning method
+(A) Constructed using a deep learning algorithm
+based on long short-term memory (LSTM), the
+dataset was partitioned, and the output results
+were determined.
+(B) Changes in accuracy on the validation set as
+the number of epochs increases. After 500 epochs, an accuracy of 0.84, precision of 0.83, and
+recall of 0.83 were achieved, indicating that temporal EEG signals can effectively classify the
+subgroupings shown in Figure 1D.
+(C) Changes in loss on the training set as the
+number of epochs increases. It can be observed
+that, as the training process achieves good classification accuracy, there was no significant
+overfitting.
+ing specific algorithms, we independently
+identified gamma oscillations in both the
+BNST and NAc and calculated their incidence. The statistical findings revealed
+significantly higher gamma activities in
+the BNST of the reward circuit for the
+HE subgroup, indicating pronounced
+music-induced activation (Figures 4B,
+4C, S3A–S3F). For the NAc, significant
+enhancement of gamma activity was
+observed only in UF patients within the
+subgroup, while this phenomenon was
+not evident in FA patients.
+Activity within the reward circuit does
+not operate in isolation.35 We examined
+its interaction with music-modulated
+temporal EEG theta activity, focusing on
+gamma oscillations within the circuit.
+Phase-locking analysis showed a significant increase in BNST gamma within
+specific temporal theta phases for the
+HE subgroups (Figure 4D). Notably, this
+synchronization of BNST gamma with
+specific temporal theta phases was
+observed in both FA and UF groups. This indicates that musicdriven temporal theta oscillations enhance the phase-locked
+activation of the BNST via gamma oscillations, potentially forming a temporal relationship known as nesting.
+In our exploration of the neural coupling between the temporal
+area and the BNST, we introduced the ‘‘nesting’’ paradigm. This
+paradigm involves maintaining a consistent and precise temporal lag between a modulated neural oscillation and the specific
+phase of its upstream oscillations.36 We extracted gamma oscillations nested within temporal theta oscillations and categorized
+BNST gamma as ‘‘nested’’ or ‘‘non-nested’’ in relation to temporal theta oscillations. Analysis showed a higher prevalence of
+nested gamma oscillations in the HE subgroups compared to
+LE, observed in both FA and UF subjects (Figures 4E and
+S3G). Non-nested BNST gamma oscillations did not differ
+4
+Cell Reports 43, 114474, August 27, 2024
+Article
+ll
+OPEN ACCESS
+A B C
+D
+Figure 3. Synchronized modulatory effects of music treatment on temporal EEG
+(A) Schematic of temporal EEG theta band filtered raw waveforms and spectrograms in the HE subgroup subject.
+(B) Schematic of temporal EEG theta band filtered raw waveforms and spectrograms in the LE subject.
+(C) Comparison of theta band power between the LE and HE subgroups. The two panels on the left represent the UF background group, while the two panels on
+the right represent the FA background group. In both backgrounds of UF and FA, the HE subgroups exhibited significantly higher theta band power (n = 8 in LE UF,
+n = 5 in HE UF, n = 5 in LE FA, n = 5 in HE FA, one-way ANOVA with Tukey’s test). The central line represents the mean value, while the error bars indicate the SEM.
+(D) Heatmap illustrating the synchronization between music waveforms and temporal EEG.
+significantly between HE and LE in the UF condition (Figure 4F).
+The nesting index was significantly higher in the HE subgroup
+(Figure 4G). In FA subjects, the HE subgroup showed more
+frequent nested and increased non-nested gamma activity, likely
+due to elevated baseline gamma (Figures 4E–4G). Overall,
+regardless of music familiarity, enjoyment aligned induced theta
+and gamma activity within the reward circuit through phase
+nesting.
+Synthesizing these results, in the HE subgroups, elevated
+gamma oscillations linked to reward circuit activation were
+mainly synchronized with temporal theta oscillations. We averaged theta waveforms before and after each nested gamma
+oscillation. The HE subgroups showed pronounced periodic
+theta activity during the gamma time window (Figures 4H
+and 4I), while the LE subgroups lacked strong periodic behavior
+(Figures 4H and 4I). For non-nested gamma, similar analysis revealed reduced theta amplitude without forming oscillations
+and no significant waveform differences between the groups.
+This suggests an intrinsic modulatory mechanism in the HE
+subgroups.
+Triple time-locked oscillatory activity in the corticoBNST-NAc circuit mediates the depression alleviation
+effect of music
+Based on the intricate interactions between the BNST and NAc
+within the reward circuit and the modulatory effect from the temporal area to the BNST, we hypothesized the existence of a triple
+time-locked oscillatory activity as a potential modulatory mechanism induced by music listening. Further studies were required
+to validate this hypothesis (Figure 5A).
+Cell Reports 43, 114474, August 27, 2024
+5
+ll
+OPEN ACCESS
+Article
+A B C
+D E F G
+H
+I
+Figure 4. Temporal theta oscillations regulate BNST-NAc activation in responses to musical appreciation
+(A) Schematic of BNST-LFP gamma band filtered waveforms and their spectrograms in a subject from the HE subgroup.
+(B) Comparison of gamma oscillation occurrence rates in BNST LFP between the LE and HE subgroups. In both backgrounds of FA and UF, the HE subgroups
+had significantly higher gamma oscillation occurrence rates than the LE subgroup (n = 8 in LE UF, n = 5 in HE UF, n = 5 in LE FA, n = 5 in HE FA, one-way ANOVA
+with Tukey’s test). The central line represents the mean value, while the error bars indicate the SEM.
+(C) Comparison of gamma oscillation occurrence rates in NAc LFP (n = 8 in LE UF, n = 5 in HE UF, n = 5 in LE FA, n = 5 in HE FA, one-way ANOVA with Tukey’s test).
+The central line represents the mean value, while the error bars indicate the SEM.
+(D) In both background of UF and FA, phase-locking analysis of BNST gamma to temporal EEG theta in the HE subgroup and the LE subgroup. BNST gamma
+exhibited significantly higher amplitude around 120 of temporal EEG theta phase (n = 8 in LE UF, n = 5 in HE UF, n = 5 in LE FA, n = 5 in HE FA, unpaired t test).
+(legend continued on next page)
+6 Cell Reports 43, 114474, August 27, 2024
+Article
+ll
+OPEN ACCESS
+Emotional reactions usually involve enhanced signal outputs
+from the BNST to the NAc. In this study, they were both activated
+in the HE subgroups under the modulatory music. We postulated
+that listening to music would impact the reward circuit via the
+auditory cortex. Consequently, the coordinated activity in the
+BNST-NAc was examined. Temporal coupling serves as a critical index for describing their synchronicity. We quantified
+the time lag from BNST-gamma to NAc-gamma, extracting
+gamma pairings with time lags less than 50 ms as gammagamma couplings. The results revealed that the subgroups in
+both familiarity conditions exhibited significantly denser occurrences of gamma-gamma coupling (Figures 5B and S3H).
+Regardless of participants’ music familiarity, HE subgroups
+consistently showed more frequent coupling. In participants
+familiar with but disliking the music, we scarcely observed the
+occurrence of gamma coupling, indicating that BNST-NAc
+gamma coupling may be a characteristic feature of reward circuit
+activation during the music appreciation process (Figure 5B).
+Furthermore, temporal coupling relationships were more
+closely aligned, with significantly shorter latencies for all
+gamma-coupling events in the HE subgroups (Figure 5C).
+We discussed temporal dynamics within gamma coupling to
+further describe the transduction process. In UF conditions,
+there was no significant difference in BNST gamma and NAc
+gamma involvement between HE and LE subgroups. However,
+in FA conditions, BNST gamma and NAc gamma involvement
+in the LE subgroup was significantly lower than in the HE subgroups (Figures 5D and 5E), indicating lower activation.
+Regarding the temporal relationships of gamma coupling, we
+analyzed the distribution of NAc-gamma before and after each
+BNST-gamma coupling and averaged them. HE subgroups
+showed higher distributions of NAc-gamma around BNSTgamma, predominantly centered around the coupling time point
+(Figures 5F and 5G). Additionally, the lower incidence of gamma
+coupling in LE subgroups was partly due to the disproportionately low proportion of single nucleus involvement in coupling.
+After identifying the modulation of temporal theta on the BNST
+and the gamma coupling within BNST-NAc, it was necessary to
+understand how music listening influences multiple nuclei within
+the reward circuit through the activity of the auditory cortex. To
+achieve this, we examined the co-occurrence of these three
+components. Co-occurrence refers to the temporal synchronization of three distinct dimensions of electrical activity. Specifically, if a single BNST gamma activity both forms nesting with
+temporal theta and exhibits temporal coupling with NAc-gamma,
+then it is defined as a tri-time-locked event. Statistical results revealed that the occurrence rate of tri-time-locked events in the
+HE subgroups were significantly higher than in the LE subgroups
+(Figures 5H and S3I). It is noteworthy that, due to the low activation level of the reward circuit, the FA but disliked group did not
+observe any triple coupling phenomena whatsoever. Furthermore, the theta-gamma nesting and BNST-NAc gamma
+coupling in tri-time-locked events were predominantly synchronized around the time point of music-induced gamma oscillation,
+indicating the direct modulatory impact of music on the reward
+circuit through the auditory cortex. Based on the observed clinical efficacy of music and the pronounced neural mechanisms
+revealed, we proposed that the positive effects are closely
+related to its impact on reward circuit activation and temporal
+lobe engagement. Its involvement in theta-gamma nesting was
+also substantial, averaging around 50%, a notably higher proportion compared to the LE subgroups in both familiarity conditions (Figure 5I).
+The physiological implications of tri-time-locked phenomena
+required further validation. According to the hypothesis we
+have presented, tri-time-locked events are indicative of
+enhanced functional interactions within the reward circuit
+induced by music through the auditory cortex. To investigate
+whether the music-evoked auditory response would modulate
+BNST-NAc synchronization, we extracted the coherence between music and temporal EEG within a window of 250 ms
+before and after each tri-time-locked event, which we referred
+to as the ‘‘surrounding locking period wPLI,’’ and the FA and
+LE subgroups did not have data on triple coupling because no
+instances of triple coupling were observed in this group (Figure 5J). Analyzing the averaged wPLI from those groups, it was
+evident that the HE subgroups exhibited a coherence peak
+before the locking time point (Figure 5K). This suggests a temporal sequence where the synchronization between music and
+temporal EEG heightened first, followed by the triple activation
+of the auditory cortex induced by music within the reward circuit.
+In stark contrast, the UF and LE group displayed a delayed peak
+in their coherence waveform after the locking time point, reflecting a disrupted temporal relationship (Figure 5L).
+Despite the absence of triple coupling in the FA low-enjoyment
+group, the FA high-enjoyment group still exhibited a trend in
+wPLI similar to the UF and HE group: peaking before the time
+point of triple coupling (Figure 5M). When examining the
+
+(E) Comparison of occurrence rates of gamma oscillation nested within temporal EEG theta in both the HE subgroups and the LE subgroups (n = 8 in LE UF, n = 5
+in HE UF, n = 5 in LE FA, n = 5 in HE FA, one-way ANOVA with Tukey’s test). The central line represents the mean value, while the error bars indicate the SEM.
+(F) Comparison of occurrence rates of gamma oscillation non-nested within temporal EEG theta (n = 8 in LE UF, n = 5 in HE UF, n = 5 in LE FA, n = 5 in HE FA, oneway ANOVA with Tukey’s test). The central line represents the mean value, while the error bars indicate the SEM.
+(G) Comparison of nesting index, illustrating the temporal relationship of theta-gamma nesting. In both backgrounds of UF and FA, the HE subgroups showed
+significantly higher gamma oscillation occurrence rates than the LE subgroups (n = 8 in LE UF, n = 5 in HE UF, n = 5 in LE FA, n = 5 in HE FA, one-way ANOVA with
+Tukey’s test). The central line represents the mean value, while the error bars indicate the SEM.
+(H) In both backgrounds of UF and FA, EEG theta waveforms around the nested gamma peak amplitude were averaged 250 ms before and after, revealing more
+rhythmic oscillatory modulation in the HE subgroup (for the left, n = 237 in UF HE, n = 144 in UF LE; for the right, n = 522 in UF HE, n = 3 in UF LE). The gray semitransparent region, spanning 50 ms before and after the gamma peak time, depicts the gamma oscillation activity window. The lines represent the mean theta
+waveform, and the shaded area indicates the standard deviation.
+(I) In the UF background group, the average non-nested gamma peak amplitude before and after 250 ms of EEG theta band filtered data showed no significant
+difference between the two groups (n = 3,492 in the HE subgroup, n = 4,088 in the LE subgroup). Similarly, in the FA background group, the average also showed
+no significant difference between the two subgroups (n = 5,193 in the HE subgroup, n = 58 in the LE subgroup).
+Cell Reports 43, 114474, August 27, 2024
+7
+ll
+OPEN ACCESS
+Article
+
+
+
+
+D E
+A B C
+F
+G
+H I
+J
+K L
+M
+(legend on next page)
+8
+Cell Reports 43, 114474, August 27, 2024
+Article
+ll
+OPEN ACCESS
+distribution of the latency from the wPLI peak to the occurrence
+of triple time locking, the HE group showed a distribution peak
+before the triple time locking, while the LE group exhibited a
+trough before the triple time locking (Fig.S3J).
+Auditory entrainment promoted triple time locking
+synchrony in unresponsive patients
+In the results mentioned, LE subgroups under both familiarity
+conditions showed no response to music processing, indicating
+unresponsiveness. To enhance therapeutic outcomes for such
+patients, we aimed to increase temporal area synchronicity. Prior
+research has shown that external sound can induce neural oscillations in the auditory cortex.22 To investigate the impact of auditory entrainment on unresponsive patients, we plan to incorporate modulatory sounds at specific frequencies into music that
+these patients have previously listened to but have shown poor
+responsiveness. Specifically, for subjects in the FA and UF LE
+subgroups, we selected the same music to which they had
+been exposed previously during their music treatment sessions.
+This music underwent two audio modifications: modulatory
+sound integration for the modulatory group (MODU) and highfrequency sound incorporation for the sham procedure group
+(SHAM) (Figure 6A).
+Participants first listened to the modulating version, followed
+by the SHAM version. Prior to the experiment, assessments using the VAS-D and VAS-A were conducted. After each listening,
+participants were re-assessed using the VAS-E, VAS-D, and
+VAS-A scales. Participants exhibited significantly higher levels
+of enjoyment for the modulating music compared to the SHAM
+counterpart. Additionally, in both conditions of familiarity, the
+modulated subjects showed a significant reduction in depressive symptoms (Figures 6B and 6C).
+To assess the activation levels of single nuclei, we also extracted the incidence of gamma oscillations as our evaluative
+metric. In UF subjects, the gamma incidence of BNST and NAc
+showed no significant difference between the modulated and
+the controlled subgroups, while the FA subjects kept significantly lower gamma incidence under control (Figures 6D, 6E,
+S4A–S4C). Meanwhile, modulated music significantly increase
+phase-locking of theta to BNST-gamma in both FA and UF
+groups (Figures 6F and S4D–S4G). This observation was further
+supported by a significant rise in both gamma nesting incidence
+and nesting index within the modulation group compared to the
+SHAM subgroups in both familiarity conditions (Figures 6F–6I
+and S5A).
+When overlaying average theta oscillation waveforms before
+and after nested gamma oscillations, we showed that the UF
+MODU group exhibited more consistent periodic activity around
+gamma, while the UF SHAM group displayed more erratic patterns (Figure 6J). In the FA condition, due to the observation of
+only one nesting under SHAM sound, statistical analysis was
+not feasible, but it generally maintained this trend. FA subjects
+showed patterns similar to UF subjects (Figure 6K).
+Auditory modulation did result in a notable rise in gamma
+coupling rates, accompanied by a significantly reduced
+coupling latency in both familiarity conditions (Figures 7A, 7B,
+and S5B). This suggests an enhanced involvement of gamma
+oscillations originating from both the BNST and NAc in the
+coupling mechanism (Figures 7C and 7D). With respect to
+the inherent temporal relationships within this coupling, the
+MODU subgroups exhibited patterns similar to those observed
+in the HE group: a greater concentration of NAc-gamma oscillations around the time of BNST-gamma coupling (Figures 7E
+and 7F). Importantly, there was a pronounced increase in the
+
+Figure 5. Triple time-locked oscillatory activity in the cortico-BNST-NAc circuit mediates the depression alleviation effect of music
+(A) Schematic of triple time locking.
+(B) Comparison of the incidence of gamma-gamma coupling in the BNST-NAc circuit (n = 8 in LE UF, n = 5 in HE UF, n = 5 in LE FA, n = 5 in HE FA, one-way ANOVA
+with Tukey’s test). The central line represents the mean value, while the error bars indicate the SEM.
+(C) Comparison of the latency of gamma-gamma coupling in the BNST-NAc circuit (n = 8 in LE UF, n = 5 in HE UF, n = 5 in LE FA, n = 5 in HE FA, one-way ANOVA
+with Tukey’s test, n = 1,257 for the HE subgroup versus n = 2,601 for the LE subgroup, n = 3,128 for the HE subgroup versus n = 52 for the LE subgroup). The
+central line represents the mean value, while the error bars indicate the SEM.
+(D) Comparison of the participants in coupling of BNST gamma oscillations (n = 8 in LE UF, n = 5 in HE UF, n = 5 in LE FA, n = 5 in HE FA, one-way ANOVA with
+Tukey’s test). The central line represents the mean value, while the error bars indicate the SEM.
+(E) Comparison of the participants of NAc gamma oscillations in coupling (n = 8 in LE UF, n = 5 in HE UF, n = 5 in LE FA, n = 5 in HE FA, one-way ANOVA with
+Tukey’s test). The central line represents the mean value, while the error bars indicate the SEM.
+(F) Temporal relationship within gamma-gamma coupling events in the UF background group. Using the BNST-gamma occurrence as the zero point, NAcgamma incidence was plotted. It could be observed that the HE subgroup exhibits a stronger tendency of NAc-gamma occurrence around BNST-gamma,
+indicating that BNST-gamma recruits NAc-gamma.
+(G) Temporal relationship within gamma-gamma coupling events in the FA background group.
+(H) Comparison of the occurrence rate of triple time-locking events (n = 8 in LE UF, n = 5 in HE UF, n = 5 in LE FA, n = 5 in HE FA, one-way ANOVA with Tukey’s
+test). The central line represents the mean value, while the error bars indicate the SEM.
+(I) Comparison of the participants of theta-gamma nesting in triple time-locking events (n = 8 in LE UF, n = 5 in HE UF, n = 5 in LE FA, n = 5 in HE FA, one-way
+ANOVA with Tukey’s test). The central line represents the mean value, while the error bars indicate the SEM.
+(J) Heatmap showing the synchronization analysis results between music and auditory cortical activity within the peri-triple time-locking time window.
+(K) Comparison of the average peri-triple time-locking wPLI in the UF background of HE and LE and the FA background of HE (n = 54 in LE UF, n = 134 in HE UF,
+n = 226 in HE FA, one-way ANOVA with Tukey’s test). The averaging was done over a time window before and after each triple time-locking event, highlighting the
+overall synchronization comparison while mitigating variations within the time window.
+(L) In the UF background group, wPLI was averaged within the peri-triple-time-locking window, showing synchronization between music and auditory cortical
+responses. There was a peak around 50 ms before triple time locking (n = 134 in UF HE and n = 54 in UF LE). The central line represents the mean value, while the
+shaded area indicate the SEM.
+(M) In the UF background group, wPLI was averaged within the peri-triple time-locking window (n = 226 in FA HE). The central line represents the mean value,
+while the error bars indicate the SEM.
+Cell Reports 43, 114474, August 27, 2024
+9
+C
+D
+E
+F G
+H
+I
+A B
+ll
+OPEN ACCESS
+J
+K
+Article
+(legend on next page)
+10
+Cell Reports 43, 114474, August 27, 2024
+Article
+ll
+OPEN ACCESS
+triple time locking of temporal EEG-BNST-NAc within the
+MODU group, with its surrounding locking period wPLI significantly exceeding that of the SHAM subgroups (Figures 7G,
+7H, and S5C). After averaging the peri-locking wPLI, coherence
+peaks preceding the locking point were also evident. However,
+in the SHAM group, this peak appeared with a delayed onset,
+resembling the scenario without modulatory integration
+(triple time locking was absent in FA subjects; Figures 7I–7K
+and S5D). As observed previously before noise entrainment, a
+similar phenomenon was absent around BNST gamma events
+or NAc gamma events (Figures S6A–S7L). This indicates functional integration within the cortex-BNST-NAc circuit rather
+than a music-evoked antidepressant effect mediated by a single nucleus.
+DISCUSSION
+Music can evoke strong emotions and is critical to insights in
+reward and emotion neuroscience.37 The mechanisms of temporal and network dynamics of music on the deeper reward circuitry underlying the antidepressant response remain underexplored.7 Depending on an individual’s level of enjoyment, music
+selectively mediates activation of the auditory cortex and propagates through consistent temporal windows to subcortical
+nuclei of the BNST-NAc reward circuit. Critically, using sound
+modulation, we emphasize the causal role of auditory entrainment in enhancing the triple time-locked synchrony of gamma
+activity in the BNST and NAc circuit. These findings have
+mechanistic implications for how music influences reward
+and emotional circuitry.7 In the UF condition, patients were previously naive to the classical music played but were still able to
+accurately discern the emotional context of music, similar to
+conventional definitions highlighting the universality of the
+musical segments. Concurrently, this was also validated among
+participants who had prior familiarity with the music. It is noteworthy that, among the FA and aversive participants, we
+observed a complete lack of integration in the BNST-NAc circuitry. Furthermore, no evidence of modulation by the auditory
+cortex was observed, resulting in the complete disappearance
+of the triadic coupling phenomenon. The results showed that
+the improvement of depressive symptoms was not linked to
+the emotion of the music itself but was correlated with the patient’s level of music enjoyment. This observation is consistent
+with reports by Zhou et al. suggesting that the impact of
+external sounds on pain perception thresholds is independent
+of the emotional inclination of the music.32 Indeed, in our study,
+the patients with TRD who did not enjoy the music lacked an
+auditory temporal EEG cortical response to the music and
+failed to activate their reward circuitry. We thus focused on
+our comparisons on those with high versus low enjoyment of
+music.
+Theta oscillations typically reflect distributed neural synchronization on a larger spatial scale. The medial temporal lobe is one
+of the important cortical sources of theta oscillations. Its rhythmicity can integrate information exchange across brain regions.
+Possibly through this pathway, music further heightened gamma
+activity in the BNST and NAc in this group, indicating engagement of a reward circuit. Critically, the network showed a stable
+phase relationship between the auditory cortical EEG-theta and
+subcortical BNST-gamma.
+Gamma oscillations reflect the enhanced local information exchange. When gamma oscillations occur in a relatively constant
+temporal relationship with the phase of low-frequency rhythms,
+coupling between the two emerges, reflecting synchronized activity and information exchange between neuron clusters. We
+further observed greater gamma coupling between the BNST
+and NAc. Thus, we propose a triple time-locked synchronization
+network model underlying the depression alleviation effect of
+
+Figure 6. Auditory entrainment activated response to music in unresponsive patients
+(A) Schematic of modulatory sound overlaid on the original waveform. The red line represents the waveform of auditory entrainment, while the yellow line
+represents the waveform of SHAM noise. The black line represents the original waveform of music.
+(B) Comparison of the results of three visual rating scales in the UF background. Shown at the top is the comparison of VAS-E ratings when patients listened to
+both types of music (n = 8, paired t test), at the center are the VAS-D ratings (n = 8, repeated measures analysis of variance [RM-ANOVA] with Dunnett’s test), and
+at the bottom are the VAS-A ratings (RM-ANOVA with Dunnett’s test).
+(C) Comparison of the results of three visual rating scales in the FA background (n = 5, paired t test and RM-ANOVA with Dunnett’s test). The central line in the
+graph represents the mean value, while the error bars indicate the SEM.
+(D) Comparison of BNST-gamma occurrence rates (n = 8, paired t test). The central line in the graph represents the mean value, while the error bars indicate
+the SEM.
+(E) Comparison of NAc-gamma occurrence rates (n = 5, paired t test). The central line in the graph represents the mean value, while the error bars indicate
+the SEM.
+(F) Comparison of the nesting incidence of theta-gamma (n = 8, paired t test). The central line in the graph represents the mean value, while the error bars indicate
+the SEM.
+(G) Comparison of the occurrence incidence of non-nested gamma (n = 5, paired t test). The central line in the graph represents the mean value, while the error
+bars indicate the SEM.
+(H) In both backgrounds of UF and FA, phase locking analysis of BNST gamma to temporal EEG theta in the MODU subgroup and the SHAM subgroup. BNST
+gamma exhibited a significantly higher amplitude around 120 of temporal EEG theta phase (n = 8 in UF and n = 5 in FA, unpaired t test).
+(I) Comparison of the nesting index (n = 8 in UF and n = 5 in FA, unpaired t test).
+(J) In the UF background group (left), the average EEG theta waveforms around the nested gamma peak amplitude show more rhythmic modulation in the MODU
+subgroup (n = 1093) and SHAM subgroup (n = 236). In the FA background group, the MODU subgroup (n = 522) was comparable to the UF group, while the SHAM
+group only found one triple time-locking event (n = 1). The gray semi-transparent region, spanning 50 ms before and after the gamma peak time, represents the
+time window of gamma oscillation activity.
+(K) In the UF background group, there was no significant difference between the MODU subgroup (n = 8,159) and the SHAM group (n = 8,471) in the average EEG
+theta band filtered data around the non-nested gamma peak amplitude. In the FA background group, the same comparison was made with the MODU subgroup
+(n = 5,193) and the SHAM group (n = 72). The lines in the graph represent the mean theta waveform, and the shaded area represents the standard deviation.
+Cell Reports 43, 114474, August 27, 2024
+11
+ll
+OPEN ACCESS
+Article
+
+
+A B C D
+E G H
+I
+J
+K
+F
+Figure 7. Auditory entrainment promoted triple time-locking synchrony and mediated the depression alleviation effect
+(A) Comparison of the incidence of gamma-gamma coupling in the BNST-NAc circuit in both the MODU subgroups and the SHAM subgroups. In both backgrounds, the MODU subgroups show significantly higher gamma coupling incidence (paired t test, n = 8, p = 0.0025 for MODU UF versus SHAM UF; paired t test,
+n = 5, p < 0.0001 for MODU FA versus SHAM FA).
+(B) Comparison of the latency of gamma-gamma coupling in the BNST-NAc circuit (one-way ANOVA, n = 1904 in MODU UF versus n = 1416 in SHAM UF,
+p < 0.0001; n = 2962 in MODU FA versus n = 17 in SHAM FA, p = 0.0136).
+(C) Comparison of BNST gamma oscillation participants in gamma coupling events (paired t test, n = 8, p = 0.0029 for MODU UF versus SHAM UF; paired t test,
+n = 5, p = 0.0035 for MODU FA versus SHAM FA).
+(legend continued on next page)
+12 Cell Reports 43, 114474, August 27, 2024
+Article
+ll
+OPEN ACCESS
+music, defined by auditory cortical-subcortical theta nesting and
+gamma coupling with the BNST-NAc reward network, as shown
+in Figure 1A.36
+The capacity for sensory stimuli in oscillatory modes to modulate corresponding neural oscillations in the stimulated cortical
+structures has been observed.38–41 Observing theta engagement in the auditory cortex, we introduced auditory entrainment
+using modulatory sound to assess its potential effect. Musical
+modulation is associated with an improvement in depressive
+symptoms, suggesting a behavioral impact.
+The BNST receives synaptic transmissions and functional outputs directly from the central amygdala and interacts with other
+relevant nuclei to form a functional complex termed the
+extended amygdala.42 Given the functional congruence between the BNST and amygdala, the BNST likely plays a pivotal
+role in the pathophysiology and treatment of depressive disorders. Imaging studies show activation of the NAc and BNST in
+response to pleasurable music.21 Xiao et al. have shown that
+the GABAergic pathway from the BNST to the NAc mediates
+the generation of depression-related negative emotions.19
+The NAc plays a crucial role in processing rewards and motivations, showing heightened activity during music-induced
+emotional experiences. Previous studies have revealed the
+involvement of the entire reward pathway in emotional reactions
+to music.21,43
+Our study integrates various research findings, revealing a
+cortical-subcortical pathway from the auditory cortex to the
+reward circuits in the BNST and NAc. This pathway, confirmed
+indirectly by prior studies, plays a key role in mediating music’s antidepressant effects based on individual appreciation
+levels. Activation of this pathway is primarily influenced by
+personal preferences rather than musical context. Familiarity
+with the music might enhance this effect, as seen in low preference ratings and absent circuit signals in familiar but disliked
+music.
+Limitations of the study
+Due to sample size, environmental factors, and data resolution,
+oscillatory alteration may be individualized. Precise information
+exchange occurs between neural nuclei, especially in neurons
+firing at specific phases during excitatory-inhibitory cycles. Current DBS electrode limitations prevent in-depth exploration, but
+future research will benefit from higher precision recording
+technologies.
+STAR+METHODS
+Detailed methods are provided in the online version of this paper and include
+the following:
+d KEY RESOURCES TABLE
+d RESOURCE AVAILABILITY
+B Lead contact
+B Materials availability
+B Data and code availability
+d EXPERIMENTAL MODEL AND STUDY PARTICIPANT DETAILS
+d METHOD DETAILS
+B Surgical procedure
+B Visual analog scales
+B Recording and preprocessing of EEG and LFP data
+B Preprocessing and power spectrum analysis
+B Spatial clustering and regrouping
+B Recurrent neural network and Naturalistic Music EEG dataset
+B Music treatment
+B Weighted phase lag index calculation
+B Oscillatory activities identification
+B Multiple temporal coupling identification
+d QUANTIFICATION AND STATISTICAL ANALYSIS
+SUPPLEMENTAL INFORMATION
+Supplemental information can be found online at https://doi.org/10.1016/j.
+celrep.2024.114474.
+ACKNOWLEDGMENTS
+We would like to express our gratitude to Shanghai Quanlan Technology Co.
+Ltd. for technical support.
+AUTHOR CONTRIBUTIONS
+X.L. proposed the research hypothesis, designed the experiments, conducted
+data analysis, and drafted the paper. Y. Wang and Y.Z. collected experimental
+data. S.M. and J.L. were responsible for coding. Y. Wu assisted with collecting
+experimental data. V.V. controlled the design of this study and the collection of
+the dataset. B.S. provided funding for the research.
+DECLARATION OF INTERESTS
+This study was funded by the National Natural Science Foundation of
+China (82271515), the SJTU Trans-med Awards Research (2019015), the Scientific and Technological Innovation Action Plan of Shanghai (KY20211478),
+and the Shanghai Municipal Science and Technology Major Project
+(2021SHZDZX).
+
+(D) Comparison of NAc gamma oscillation participants in gamma coupling events (paired t test, n = 8, p = 0.0023 for MODU UF versus SHAM UF; paired t test,
+n = 5, p = 0.0074 for MODU FA versus SHAM FA).
+(E) Internal temporal relationships within gamma coupling events in both the MODU subgroup and the SHAM subgroup under the UF background.
+(F) Internal temporal relationships within gamma coupling events in both the MODU subgroup and the SHAM subgroup under the FA background.
+(G) Comparison of the occurrence rate of triple time-locking events (paired t test, n = 8, p = 0.0019 for MODU UF versus SHAM UF; paired t test, n = 5, p = 0.0005
+for MODU FA versus SHAM FA).
+(H) Heatmap showing the synchronization analysis results between music and auditory cortical activity within the peri-triple time-locking time window. The three
+panels from top to bottom represent the UF background of MODU and SHAM and the FA background of MODU.
+(I) Comparison of the average peri-triple time-locking wPLI in the UF background of MODU (n = 134) and SHAM (n = 54), and the FA background of MODU (n =
+205) (one-way ANOVA with Tukey’s test, UF MODU versus UF SHAM, p = 0.0227, UF SHAM versus FA MODU, p < 0.0001).
+(J) In the UF background group, the wPLI is averaged at each time point within the peri-triple-time-locking time window, highlighting the trend of synchronization
+between music and auditory cortical responses within the time window (n = 134 in UF MODU and n = 54 in UF SHAM). In the FA background group, the wPLI is
+averaged at each time point within the peri-triple time-locking time window(n = 205 in FA MODU).The lines represent the mean theta waveform, and the shaded
+area represents the standard deviation.
+Cell Reports 43, 114474, August 27, 2024
+13
+ll
+OPEN ACCESS
+Article
+Received: November 2, 2023
+Revised: April 15, 2024
+Accepted: June 24, 2024
+Published: August 9, 2024
+REFERENCES
+1. Friedrich, M.J. (2017). Depression Is the Leading Cause of Disability
+Around the World. JAMA 317, 1517. https://doi.org/10.1001/jama.
+2017.3826.
+2. Gaynes, B.N., Lux, L., Gartlehner, G., Asher, G., Forman-Hoffman, V.,
+Green, J., Boland, E., Weber, R.P., Randolph, C., Bann, C., et al. (2020).
+Defining treatment-resistant depression. Depress. Anxiety 37, 134–145.
+https://doi.org/10.1002/da.22968.
+3. Zhu, Y., Wang, R., Tang, X., Li, Q., Xu, G., and Zhang, A. (2021). The effect
+of music, massage, yoga and exercise on antenatal depression: A metaanalysis. J. Affect. Disord. 292, 592–602. https://doi.org/10.1016/j.jad.
+2021.05.122.
+4. Koelsch, S. (2005). Investigating emotion with music: neuroscientific approaches. Ann. N. Y. Acad. Sci. 1060, 412–418. https://doi.org/10.1196/
+annals.1360.034.
+5. Caria, A., Venuti, P., and de Falco, S. (2011). Functional and dysfunctional
+brain circuits underlying emotional processing of music in autism spectrum disorders. Cereb. Cortex 21, 2838–2849. https://doi.org/10.1093/
+cercor/bhr084.
+6. Koelsch, S. (2010). Towards a neural basis of music-evoked emotions.
+Trends Cogn. Sci. 14, 131–137. https://doi.org/10.1016/j.tics.2010.
+01.002.
+7. Koelsch, S. (2014). Brain correlates of music-evoked emotions. Nat. Rev.
+Neurosci. 15, 170–180. https://doi.org/10.1038/nrn3666.
+8. Eldar, E., Ganor, O., Admon, R., Bleich, A., and Hendler, T. (2007). Feeling
+the real world: limbic response to music depends on related content.
+Cereb. Cortex 17, 2828–2840. https://doi.org/10.1093/cercor/bhm011.
+9. Fruhholz, S., Trost, W., and Grandjean, D. (2014). The role of the medial €
+temporal limbic system in processing emotions in voice and music.
+Prog. Neurobiol. 123, 1–17. https://doi.org/10.1016/j.pneurobio.2014.
+09.003.
+10. Zuk, N.J., Carney, L.H., and Lalor, E.C. (2018). Preferred Tempo and LowAudio-Frequency Bias Emerge From Simulated Sub-cortical Processing
+of Sounds With a Musical Beat. Front. Neurosci. 12, 349. https://doi.org/
+10.3389/fnins.2018.00349.
+11. Zse´ li, G., Vida, B., Szilva´ sy-Szabo´ , A., To´ th, M., Lechan, R.M., and Fekete,
+C. (2018). Neuronal connections of the central amygdalar nucleus with refeeding-activated brain areas in rats. Brain Struct. Funct. 223, 391–414.
+https://doi.org/10.1007/s00429-017-1501-4.
+12. Avery, S.N., Clauss, J.A., and Blackford, J.U. (2016). The Human BNST:
+Functional Role in Anxiety and Addiction. Neuropsychopharmacology
+41, 126–141. https://doi.org/10.1038/npp.2015.185.
+13. Bayless, D.W., Davis, C.H.O., Yang, R., Wei, Y., de Andrade Carvalho,
+V.M., Knoedler, J.R., Yang, T., Livingston, O., Lomvardas, A., Martins,
+G.J., et al. (2023). A neural circuit for male sexual behavior and reward.
+Cell 186, 3862–3881.e28. https://doi.org/10.1016/j.cell.2023.07.021.
+14. Avery, S.N., Clauss, J.A., Winder, D.G., Woodward, N., Heckers, S., and
+Blackford, J.U. (2014). BNST neurocircuitry in humans. Neuroimage 91,
+311–323. https://doi.org/10.1016/j.neuroimage.2014.01.017.
+15. Lebow, M.A., and Chen, A. (2016). Overshadowed by the amygdala: the
+bed nucleus of the stria terminalis emerges as key to psychiatric disorders.
+Mol. Psychiatry 21, 450–463. https://doi.org/10.1038/mp.2016.1.
+16. Koelsch, S., and Skouras, S. (2014). Functional centrality of amygdala,
+striatum and hypothalamus in a "small-world" network underlying joy: an
+fMRI study with music. Hum. Brain Mapp. 35, 3485–3498. https://doi.
+org/10.1002/hbm.22416.
+17. Zinsmaier, A.K., Dong, Y., and Huang, Y.H. (2022). Cocaine-induced projection-specific and cell type-specific adaptations in the nucleus accumbens. Mol. Psychiatry 27, 669–686. https://doi.org/10.1038/s41380-021-
+01112-2.
+18. Vendruscolo, L.F., Barbier, E., Schlosburg, J.E., Misra, K.K., Whitfield,
+T.W., Jr., Logrip, M.L., Rivier, C., Repunte-Canonigo, V., Zorrilla, E.P.,
+Sanna, P.P., et al. (2012). Corticosteroid-dependent plasticity mediates
+compulsive alcohol drinking in rats. J. Neurosci. 32, 7563–7571. https://
+doi.org/10.1523/jneurosci.0069-12.2012.
+19. Xiao, Q., Zhou, X., Wei, P., Xie, L., Han, Y., Wang, J., Cai, A., Xu, F., Tu, J.,
+and Wang, L. (2021). A new GABAergic somatostatin projection from the
+BNST onto accumbal parvalbumin neurons controls anxiety. Mol. Psychiatry 26, 4719–4741. https://doi.org/10.1038/s41380-020-0816-3.
+20. Kaas, J.H., and Hackett, T.A. (2000). Subdivisions of auditory cortex and
+processing streams in primates. Proc. Natl. Acad. Sci. USA 97, 11793–
+11799. https://doi.org/10.1073/pnas.97.22.11793.
+21. Blood, A.J., and Zatorre, R.J. (2001). Intensely pleasurable responses to
+music correlate with activity in brain regions implicated in reward and
+emotion. Proc. Natl. Acad. Sci. USA 98, 11818–11823. https://doi.org/
+10.1073/pnas.191355898.
+22. Martorell, A.J., Paulson, A.L., Suk, H.J., Abdurrob, F., Drummond, G.T.,
+Guan, W., Young, J.Z., Kim, D.N.W., Kritskiy, O., Barker, S.J., et al.
+(2019). Multi-sensory Gamma Stimulation Ameliorates Alzheimer’s-Associated Pathology and Improves Cognition. Cell 177, 256–271.e22. https://
+doi.org/10.1016/j.cell.2019.02.014.
+23. Schubert, E. (2007). The influence of emotion, locus of emotion and familiarity upon preference in music. Psychol. Music 35, 499–515.
+24. Baumgartner, T., Willi, M., and Ja¨ ncke, L. (2007). Modulation of corticospinal activity by strong emotions evoked by pictures and classical music: a
+transcranial magnetic stimulation study. Neuroreport 18, 261–265.
+25. Tennant, M., Youssef, G.J., McGillivray, J., Clark, T.J., McMillan, L., and
+McCarthy, M.C. (2020). Exploring the use of Immersive Virtual Reality to
+enhance Psychological Well-Being in Pediatric Oncology: A pilot randomized controlled trial. Eur. J. Oncol. Nurs. 48, 101804. https://doi.org/10.
+1016/j.ejon.2020.101804.
+26. Holz, E.M., Botrel, L., Kaufmann, T., and Kubler, A. (2015). Long-term in- €
+dependent brain-computer interface home use improves quality of life of
+a patient in the locked-in state: a case study. Arch. Phys. Med. Rehabil.
+96, S16–S26. https://doi.org/10.1016/j.apmr.2014.03.035.
+27. Moulton, C.D., Strawbridge, R., Tsapekos, D., Oprea, E., Carter, B.,
+Hayes, C., Cleare, A.J., Marwood, L., Mantingh, T., and Young, A.H.
+(2021). The Maudsley 3-item Visual Analogue Scale (M3VAS): Validation
+of a scale measuring core symptoms of depression. J. Affect. Disord.
+282, 280–283. https://doi.org/10.1016/j.jad.2020.12.185.
+28. Facco, E., Stellini, E., Bacci, C., Manani, G., Pavan, C., Cavallin, F., and
+Zanette, G. (2013). Validation of visual analogue scale for anxiety
+(VAS-A) in preanesthesia evaluation. Minerva Anestesiol. 79, 1389–1395.
+29. Scangos, K.W., Khambhati, A.N., Daly, P.M., Makhoul, G.S., Sugrue, L.P.,
+Zamanian, H., Liu, T.X., Rao, V.R., Sellers, K.K., Dawes, H.E., et al. (2021).
+Closed-loop neuromodulation in an individual with treatment-resistant
+depression. Nat. Med. 27, 1696–1700. https://doi.org/10.1038/s41591-
+021-01480-w.
+30. Howe, C.A., Clevenger, K.A., McElhiney, D., Mihalic, C., and Ragan, M.A.
+(2019). Measurement of Children’s Real-Time Physical Activity Enjoyment
+Using a New Visual Analog Scale. J. Phys. Act. Health 16, 406–415.
+https://doi.org/10.1123/jpah.2018-0074.
+31. Shukuroglou, M., Roseman, L., Wall, M., Nutt, D., Kaelen, M., and Carhart-Harris, R. (2023). Changes in music-evoked emotion and
+ventral striatal functional connectivity after psilocybin therapy for
+depression. J. Psychopharmacol. 37, 70–79. https://doi.org/10.1177/
+02698811221125354.
+32. Zhou, W., Ye, C., Wang, H., Mao, Y., Zhang, W., Liu, A., Yang, C.L., Li, T.,
+Hayashi, L., Zhao, W., et al. (2022). Sound induces analgesia through
+14
+Cell Reports 43, 114474, August 27, 2024
+Article
+ll
+OPEN ACCESS
+corticothalamic circuits. Science 377, 198–204. https://doi.org/10.1126/
+science.abn4663.
+33. Miyapuram, K.P., Ahmad, N., Pandey, P., and Lomas, J.D. (2022). Electroencephalography (EEG) dataset during naturalistic music listening
+comprising different genres with familiarity and enjoyment ratings. Data
+Brief 45, 108663. https://doi.org/10.1016/j.dib.2022.108663.
+34. Buzsa´ ki, G., and Wang, X.-J. (2012). Mechanisms of gamma oscillations.
+Annu. Rev. Neurosci. 35, 203–225.
+35. Nestler, E.J., and Carlezon, W.A., Jr. (2006). The mesolimbic dopamine
+reward circuit in depression. Biol. Psychiatry 59, 1151–1159.
+36. Kim, J., Gulati, T., and Ganguly, K. (2019). Competing Roles of Slow Oscillations and Delta Waves in Memory Consolidation versus Forgetting. Cell
+179, 514–526.e13. https://doi.org/10.1016/j.cell.2019.08.040.
+37. Koelsch, S. (2020). A coordinate-based meta-analysis of music-evoked
+emotions. Neuroimage 223, 117350. https://doi.org/10.1016/j.neuroimage.2020.117350.
+38. Adaikkan, C., Middleton, S.J., Marco, A., Pao, P.C., Mathys, H., Kim,
+D.N.W., Gao, F., Young, J.Z., Suk, H.J., Boyden, E.S., et al. (2019).
+Gamma Entrainment Binds Higher-Order Brain Regions and Offers Neuroprotection. Neuron 102, 929–943.e8. https://doi.org/10.1016/j.neuron.
+2019.04.011.
+39. Iaccarino, H.F., Singer, A.C., Martorell, A.J., Rudenko, A., Gao, F., Gillingham, T.Z., Mathys, H., Seo, J., Kritskiy, O., Abdurrob, F., et al. (2016).
+Gamma frequency entrainment attenuates amyloid load and modifies microglia. Nature 540, 230–235. https://doi.org/10.1038/nature20587.
+40. Kompotis, K., Hubbard, J., Emmenegger, Y., Perrault, A., Muhlethaler, M., €
+Schwartz, S., Bayer, L., and Franken, P. (2019). Rocking Promotes Sleep
+in Mice through Rhythmic Stimulation of the Vestibular System. Curr. Biol.
+29, 392–401.e4. https://doi.org/10.1016/j.cub.2018.12.007.
+41. O¨ zturk-C € ¸ olak, A., Inami, S., Buchler, J.R., McClanahan, P.D., Cruz, A.,
+Fang-Yen, C., and Koh, K. (2020). Sleep Induction by Mechanosensory
+Stimulation in Drosophila. Cell Rep. 33, 108462. https://doi.org/10.1016/
+j.celrep.2020.108462.
+42. Jaramillo, A.A., Brown, J.A., and Winder, D.G. (2021). Danger and distress:
+Parabrachial-extended amygdala circuits. Neuropharmacology 198,
+108757. https://doi.org/10.1016/j.neuropharm.2021.108757.
+43. Salimpoor, V.N., van den Bosch, I., Kovacevic, N., McIntosh, A.R., Dagher,
+A., and Zatorre, R.J. (2013). Interactions between the nucleus accumbens
+and auditory cortices predict music reward value. Science 340, 216–219.
+https://doi.org/10.1126/science.1231059.
+44. Oostenveld, R., Fries, P., Maris, E., and Schoffelen, J.M. (2011). FieldTrip:
+Open source software for advanced analysis of MEG, EEG, and invasive
+electrophysiological data. Comput. Intell. Neurosci. 2011, 156869.
+https://doi.org/10.1155/2011/156869.
+45. Neudorfer, C., Butenko, K., Oxenford, S., Rajamani, N., Achtzehn, J.,
+Goede, L., Hollunder, B., Rı´os, A.S., Hart, L., Tasserie, J., et al. (2023).
+Lead-DBS v3.0: Mapping deep brain stimulation effects to local anatomy
+and global networks. Neuroimage 268, 119862. https://doi.org/10.1016/j.
+neuroimage.2023.119862.
+46. Zheng, Y.P., Zhao, J.P., Phillips, M., Liu, J.B., Cai, M.F., Sun, S.Q., and
+Huang, M.F. (1988). Validity and reliability of the Chinese Hamilton Depression Rating Scale. Br. J. Psychiatry 152, 660–664. https://doi.org/10.1192/
+bjp.152.5.660.
+47. Buzsa´ ki, G., and Schomburg, E.W. (2015). What does gamma coherence
+tell us about inter-regional neural communication? Nat. Neurosci. 18,
+484–489. https://doi.org/10.1038/nn.3952.
+48. Buzsa´ ki, G., and Wang, X.J. (2012). Mechanisms of gamma oscillations.
+Annu. Rev. Neurosci. 35, 203–225. https://doi.org/10.1146/annurevneuro-062111-150444.
+49. Colgin, L.L. (2013). Mechanisms and functions of theta rhythms. Annu.
+Rev. Neurosci. 36, 295–312. https://doi.org/10.1146/annurev-neuro-
+062012-170330.
+50. Jadhav, S.P., Rothschild, G., Roumis, D.K., and Frank, L.M. (2016). Coordinated Excitation and Inhibition of Prefrontal Ensembles during Awake
+Hippocampal Sharp-Wave Ripple Events. Neuron 90, 113–127. https://
+doi.org/10.1016/j.neuron.2016.02.010.
+51. Sauseng, P., Peylo, C., Biel, A.L., Friedrich, E.V.C., and Romberg-Taylor,
+C. (2019). Does cross-frequency phase coupling of oscillatory brain activity contribute to a better understanding of visual working memory? Br. J.
+Psychol. 110, 245–255. https://doi.org/10.1111/bjop.12340.
+52. Malerba, P., and Kopell, N. (2013). Phase resetting reduces theta-gamma
+rhythmic interaction to a one-dimensional map. J. Math. Biol. 66, 1361–
+1386. https://doi.org/10.1007/s00285-012-0534-9.
+53. Maingret, N., Girardeau, G., Todorova, R., Goutierre, M., and Zugaro, M.
+(2016). Hippocampo-cortical coupling mediates memory consolidation
+during sleep. Nat. Neurosci. 19, 959–964. https://doi.org/10.1038/
+nn.4304.
+Cell Reports 43, 114474, August 27, 2024
+15
+ll
+OPEN ACCESS
+Article
+STAR+METHODS
+KEY RESOURCES TABLE
+
+
+REAGENT or RESOURCE
+SOURCE
+IDENTIFIER
+Experimental models: Organisms/strains
+Ruijin Hospital of the Shanghai Jiaotong
+University School of Medicine
+Human subject
+Table S1
+
+Software and algorithms
+MATLAB R2022a The MathWorks Inc., Natick, USA RRID:SCR_001622
+MATLAB toolbox filedtrip Oostenveld et al.44 https://www.fieldtriptoolbox.org
+MATLAB toolbox lead-DBS Neudorfer et al.45 RRID:SCR_002915
+MATLAB oscillation analysis This paper See the code provided in the supplemental file
+MATLAB Deep Learning toolbox The MathWorks Inc., Natick, USA https://www.mathworks.com/products/deep-learning.html
+Adobe Auditor Adobe Audition, USA RRID:SCR_015796
+NeuroExplorer Plexon, USA RRID:SCR_001818
+Other
+EEG recording device Brain Products, Germany RRID:SCR_009443
+CT scan device Philips CT, Netherlands N/A
+MRI scan device Philips 3.0T, Netherlands N/A
+Naturalistic Music EEG Dataset Miyapuram et al.33 https://exhibits.stanford.edu/data/catalog/jn859kj8079
+Headphones Philips Audio, SHP9500 N/A
+Hamilton Depression Rating Scale Zheng et al.46 https://doi.org/10.1192/bjp.152.5.660
+Pyotr Il0yich Tchaikovsky
+Ludwig van Beethoven
+Antonio Vivaldi
+Johann Sebastian Bach
+Wolfgang Amadeus Mozart
+Ludwig van Beethoven
+Franz Schubert
+Pyotr Il0yich Tchaikovsky
+Johann Pachelbel
+"Symphony No. 7 in A Major, Op.
+92, Third Movement"
+Symphony No. 6 in B minor, Op.
+74 ‘Pathe´ tique’
+Pyotr Il0yich Tchaikovsky https://www.classicalarchives.com/newca/#!/Work/28456
+"Waltz of the Flowers" from The
+Nutcracker Suite, Op. 71a
+Piano Sonata No. 14 in C-sharp minor,
+Op. 27, No. 2 ‘Moonlight Sonata’
+Ellens Gesang III (‘Ave Maria’),
+D. 839, Op. 52, No. 6
+Air on the G String from Orchestral
+Suite No. 3 in D Major, BWV 1068
+Johann Sebastian Bach https://www.classicalarchives.com/newca/#!/Work/3198
+https://www.classicalarchives.com/newca/#!/Work/19010
+"Romanze" from Eine kleine Nachtmusik
+(Serenade No. 13 for strings in
+G major, K. 525)
+Wolfgang Amadeus Mozart https://www.classicalarchives.com/newca/#!/Work/19010
+https://www.classicalarchives.com/newca/#!/Work/28456
+"Spring" from The Four Seasons
+(Violin Concerto in E major,
+Op. 8, No. 1, RV 269)
+Antonio Vivaldi https://www.classicalarchives.com/newca/#!/Work/29686
+https://www.classicalarchives.com/newca/#!/Work/29686
+https://www.classicalarchives.com/newca/#!/Work/4216
+https://www.classicalarchives.com/newca/#!/Work/3198
+https://www.classicalarchives.com/newca/#!/Work/3962
+Canon in D, for 3 violins and continuo
+(‘Pachelbel’s Canon’), T.337
+Johann Pachelbel https://www.classicalarchives.com/newca/#!/Work/48526
+https://www.classicalarchives.com/newca/#!/Work/48857
+https://www.classicalarchives.com/newca/#!/Work/25137
+https://www.classicalarchives.com/newca/#!/Work/48526
+Visual analog scale-Depression Moulton et al.27 https://doi.org/10.1016/j.jad.2020.12.185
+Visual analog scale-Anxiety Facco et al.28 https://www.researchgate.net/publication/
+249966196_Validation_Of_Visual_Analogue_
+Scale_For_Anxiety_Vas-A_In_
+Preanesthesia_Evaluation
+Visual analog scale-Enjoyment Howe et al.30 https://doi.org/10.1123/jpah.2018-0074
+16
+Cell Reports 43, 114474, August 27, 2024
+Article
+ll
+OPEN ACCESS
+RESOURCE AVAILABILITY
+Lead contact
+Further information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Bomin Sun
+(bomin_sun@163.com).
+Materials availability
+This study did not generate new unique reagents.
+Data and code availability
+Local field potential signal data, CT and MRI images reported in this paper will be shared by the lead contact upon request. All original
+code is available in this paper’s supplemental information. Any additional information required to reanalyze the data reported in this
+paper is available from the lead contact upon request.
+EXPERIMENTAL MODEL AND STUDY PARTICIPANT DETAILS
+Twenty-three patients were recruited who met diagnostic criteria of the ICD-10 (International Classification of Diseases) for recurrent
+depressive disorder and the following criteria: age between 18 and 65 years old; current duration of depressive episode longer than
+two years or repeated episodes with more than four episodes (current episode duration R1 year); treatment-resistant depression,
+defined as poor response to at least three full-dose and full-course (more than 8 weeks) treatments, including at least two antidepressant drugs with different mechanisms of action and intolerance or poor response to non-convulsive electrotherapy; symptom
+severity, as measured by a score of at least 17 on the Hamilton Depression Scale-17 (HAMD-17). Patient safety and the potential
+negative effects of music on their condition were monitored through weekly HAMD-17 assessments. If a patient’s HAMD-17 score
+exceeded their baseline score, it was considered a worsening of symptoms, and the patient was required to withdraw from the study
+and receive antidepressant treatment. Four participants reported experiencing negative emotions induced by listening to familiar but
+disliked music, making it difficult for them to adhere to the experimental protocol. However, these participants chose to continue the
+study voluntarily. Additionally, none of these patients had HAMD-17 scores that exceeded their baseline levels, thus the mandatory
+withdrawal mechanism was not triggered.
+All participants self-identified as Asian, and their gender identities were consistent with their biological sex. All patients self-reported that they had no prior experience of listening to classical music and had not heard these two pieces of music before. The participants in this study mainly come from a group of patients who have undergone electrode implantation and are to be treated for TRD
+using deep brain stimulation therapy. The study protocol was approved by the Ruijin Hospital Ethics Committee of the Shanghai Jiaotong University School of Medicine. All enrolled patients and their legal representatives were required to sign a formal informed consent before enrollment. Because of the small sample size and the consistence of the majority of most information, the analyses of the
+sex, gender, ancestry, race and ethnicity, socioeconomic status of patients were not performed in this study. A supplementary table
+of patients’ demographic information is available.
+METHOD DETAILS
+Surgical procedure
+For the purpose of treating TRD, patients included in this study underwent electrode placement for deep brain stimulation therapy.
+Relevant clinical studies were approved by the Ruijin Hospital Ethics Committee of the Shanghai Jiaotong University School of Medicine. In this study, electrodes were only used for recording local field potential signals. Additionally, to avoid interference from lesion
+effects, any procedures were performed 30 days after electrode implantation. The pre-surgical plan involved the insertion of electrodes through multiple targets. CT-stereotactic guidance and pre-operative MRI were utilized to implant the DBS leads while patients were under general anesthesia (Figures 1A–1C). Model SR1202-S electrodes were employed in this study, with a diameter
+of 1.27 mm in diameter (SceneRay, SR1202-S) were employed in this study consisting of eight cylindrical contacts, each measuring
+1.5 mm in length. Each contact was 1.5mm in length and separated by 0.5mm. The adjacent contacts were separated by a distance
+of 0.5 mm. We used Lead-DBS software to reconstruct and localize the electrodes. The location of electrodes and nuclei are presented in Fig.S1A. The electrode was placed at the NAc and passed through the BNST.
+Visual analog scales
+To precisely capture music-induced emotional responses, this study utilized three VAS scales: VAS-D (Depression), VAS-A (Anxiety),
+and VAS-E (Enjoyment). For VAS-D assessment, participants used a mouse to slide freely along a 10 cm horizontal bar, with the screen
+displaying the prompt, ‘‘Please describe the level of your current depressive feelings.’’ One end of the bar was labeled 0, ‘‘No feeling,’’
+and the other endwas labeled 100, ‘‘Very intense feeling.’’Participantsmarked a point on this line to indicate their subjective perception
+of the intensity of the feeling. The VAS-A and VAS-E followed the same procedure, with prompts reading ‘‘Please describe the level of
+your current anxiety feelings’’ and ‘‘Please describe the level of your enjoyment of the music segment,’’ respectively.
+Cell Reports 43, 114474, August 27, 2024
+17
+ll
+OPEN ACCESS
+Article
+Recording and preprocessing of EEG and LFP data
+Local field potential data were recorded using the BrainAmp MR amplifier from Brain Products at a sampling rate of 1000 Hz. EEG data
+were captured with Brain Products’ 64-channel saline EEG cap, R-Net. Both EEG and LFP signals were captured synchronously. For
+this study, data from six channels on both sides of the temporal area were retained and subsequently averaged, including T7, T8, FT7,
+FT8, TP7 and TP8 of the 64-channel EEG. Real-time data referencing utilized the left mastoid electrode, with the nose tip serving as the
+ground. Offline preprocessing and analysis of the LFP data were carried out using MATLAB 2022a. Recording contacts selection was
+informed by lead-DBS reconstructions, specifically focusing on contact points within the BNST and NAc. These contacts underwent
+bipolar re-referencing by subtracting values from their adjacent counterparts, ensuring activity localized to the BNST-NAc circuit and
+negating any volume-conducted interference from distant brain regions. To refine the data, a two-way IIR Butterworth filter was employed, mitigating direct current bias below 1 Hz and filtering out 50 Hz power line disturbances and its harmonics.
+Preprocessing and power spectrum analysis
+Before the analysis, the sampling rate was reset at 500 Hz, and recorded LFP was band-pass filtered at 1–100 Hz (IIR Butterworth
+filter) with 1 dB of bandpass attenuation to minimize contamination by movement artifact. Power spectral density (PSD) analysis was
+mainly performed in MATLAB, which was extracted by the method of Welch periodogram (in detail, MATLAB function pwelch). We
+used a fast Fourier transform (FFT) of 4,096 points with 50% overlap and multi-taper methods (time-bandwidth product = 3, number
+of tapers = 5) to decrease edge effects. Before further statistical analysis, power from the PSD was normalized. All of the analyses in
+this period were calculated in MATLAB software (MATLAB 2022a; The MathWorks, Inc., Natick, MA).
+Spatial clustering and regrouping
+Patients were regrouped according to their response to the music. Three visual scales were used to classification: the VAS-D, VAS-A,
+VAS-E. To determine the decision boundary between two distinct data clusters, a function was designed. This function operates in
+the following manner. First, the three input vectors VAS-D, VAS-A, and VAS-E are consolidated into a single data matrix, where each
+column of the matrix represents a vector. The consolidated data undergoes clustering via the k-means spatial clustering, which segregates the data into two distinct classes. The resultant labels from this clustering serve as the classifications for the given data. The
+clustering operation was implemented using the kmeans function in MATLAB. Upon completion of clustering, the decision boundary
+between the two groups was obtained through training a K-nearest neighbor classifier. Following the re-grouping, we validated the
+reliability of the grouping criteria through two methods. Firstly, for the clustering process, we computed its Davies-Bouldin index,
+which resulted in 0.22. Additionally, based on post-experiment interviews conducted at the end of the trials, participants were asked
+a binary question regarding whether they enjoyed the music played during the experiment. The results of this post-hoc validation
+were entirely consistent with the clustering classification results. Therefore, it can be inferred that the classification process based
+on clustering and post-hoc validation is fundamentally reliable.
+Recurrent neural network and Naturalistic Music EEG dataset
+Recurrent neural networks (RNNs) were employed for predicting individuals’ music appreciation based on temporal lobe EEG. Due to
+limited intracranial data throughput, an external Naturalistic Music EEG Dataset was utilized for RNN training (https://exhibits.
+stanford.edu/data/catalog/jn859kj8079).30 This dataset includes cortical (EEG) and behavioral data collected during natural music
+listening, recorded from 20 adult participants exposed to 10 full-length songs with electronically produced beats at varying tempos.
+The training set comprised 80% of the dataset, the test set 20%, and data from depressed patients formed the validation set.
+The dataset is divided in the RNN as follows.The mean temporal EEG signals across different channels from individual trials were
+used as input, with music appreciation levels serving as category labels. These labels were categorized into high and low appreciation groups based on whether they exceeded 50% of the maximum score. For dataset segmentation, 80% of the Naturalistic Music
+EEG dataset was randomly selected as the training set, with the remaining 20% used as the test set. Additionally, the TRD music
+treatment EEG data was designated as the validation set. This partitioning was designed to ensure sufficient variance between
+the training and validation datasets. Both datasets encompassed a diverse range of racial backgrounds, cultural influences, music
+genres, and medical histories, reducing the risk of overfitting. The Naturalistic Music EEG dataset encompasses data from 64 EEG
+channels, with channels identified as temporal lobe EEG being extracted. The average value of these channels, combined with individual music appreciation levels, served as input for the RNN’s supervised classification task. The RNN’s basic units were Long
+Short-Term Memory (LSTM) modules. The first layer, receiving the input data, consisted of 512 LSTM units, followed by a Rectified
+Linear Unit (ReLU) module with a 50% dropout rate. The number of LSTM units in the second layer was halved to 256. The third layer
+contained 128 LSTM units, and the fourth had 64 ReLU units. Each ReLU layer had a consistent 50% dropout rate. The fifth layer was
+a fully connected layer, providing classification results through a softmax regression processing layer. In the RNN, the learning rate
+was set at 0.05, and learning rate drop occurred every 10 epochs, with the drop factor set to 0.95. MATLAB 2022a with the Deep
+Learning Toolbox (https://www.mathworks.com/products/deep-learning.html) was used for the entire training period.
+Music treatment
+To differentiate the impact of familiarity on the depression-alleviating effects of music, 23 participants were divided into two groups,
+with 13 participants exposed to unfamiliar music and the remaining 10 participants exposed to familiar music. All participants,
+18
+Cell Reports 43, 114474, August 27, 2024
+Article
+ll
+OPEN ACCESS
+particularly those listening to unfamiliar music, lacked prior exposure to classical music appreciation due to their Asian cultural background. In this subgroup, participants directly listened to both types of music with different emotional orientations.
+For participants exposed to familiar music, we employed the following method to ensure they were at a relatively high and similar
+level of familiarity. Firstly, we compiled a list of 8 musical excerpts, which were outside of their listening history. Details about the
+music used can be found in the key resources table. Participants listened to this music list three times a day for 14 consecutive
+days, and on the final day, they rated the music in the list based on their preference level. After obtaining these ratings, the 10 participants were randomly divided into two groups. One group listened to the music excerpt with the highest preference level in the
+subsequent experiment, while the other group listened to the excerpt with the lowest preference level. These music excerpt ratings
+needed to not only meet the highest/lowest criteria but also exceed/fall below the mean rating by plus/minus one standard deviation.
+After selecting the familiar music excerpts, the participants underwent a session of listening to the music and simultaneous recording
+of EEG-LFP signals on the following day’s experiment.
+The music treatments were administered in the EEG recording room at Ruijin Hospital, which was soundproofed. During the
+listening sessions, each patient was placed alone in a quiet room measuring approximately 5 square meters. There were no background noises present. Throughout the process, two psychiatrists and one experimenter monitored the patients to ensure their
+safety. The quantity, duration, and frequency of the music treatments varied slightly depending on the patients’ grouping conditions.
+Participants used Phillips SHP9500 headphones, and the sound level was maintained at approximately 75dB. To minimize artifacts in
+the EEG recordings, patients were not allowed to freely adjust the volume. Instead, short sounds were played before the experiment
+began, and patients were asked if they were comfortable with the volume. For the generation of external sound, we created a series of
+sine waves with specific amplitudes at intervals of 0.1Hz within the frequency bands of 40-44Hz and 160-164Hz. The former serves as
+the stimulus source for the modulation group, while the latter serves as the stimulus source for the Sham group. Finally, these sine
+waves were superimposed to produce two types of regulatory noises. The sound generation was conducted in MATLAB 2022a, while
+the blending of the noise with the music waveform was done in Adobe Audition 2021.
+Weighted phase lag index calculation
+For the coherence between the temporal EEG data and the music waveform, Based on the z-transformed data, we calculate the
+weighted phase lag index (wPLI) of the two waveforms using a sliding window, where the width of the sliding time window is set
+at 1000ms, and the sliding range is 0.5 times the window width. The wPLI analysis method begins by performing a fast Fourier transform (FFT) on two time series signals to obtain their frequency domain representation. Following that, the cross power spectral density of the two signals in the frequency domain is calculated, with a particular focus on its imaginary part, to describe the phase relationship between the two signals. The calculation of the wPLI index is based on the ratio between the sum of the absolute values of
+the imaginary part of the cross spectrum and the absolute value of the sum of the imaginary part. This index represents the weighted
+phase coherence between the two signals, providing a measure of their synchronization.
+Oscillatory activities identification
+For gamma oscillation identification, the pre-processed LFP recorded from BNST and NAc was used. A bandpass filter (Butterworth
+filter, MATLAB2022a) was used to extract data between 30Hz and 100Hz. Then, the envelope of the filtered data was calculated using
+the Hilbert transform. Peaks in the data that exceeded the mean value plus 2 times the standard deviation, or that were below the
+mean value minus 2 times the standard deviation were identified.
+To ensure genuine gamma oscillations, differences between adjacent peaks were computed. Peaks with intervals greater than
+25ms from adjacent ones were selected to avoid detecting closely spaced peaks, possibly from the same gamma oscillation event.
+The starting and ending time points of each valid peak were determined by tracing back and forward from the peak until values dropped below the mean plus the standard deviation. Peak amplitude and duration were computed for each valid gamma oscillation..47,48
+For theta oscillation identification, a bandpass filter was applied to the temporal EEG data, targeting the frequency range of 4Hz–
+8Hz, with a resampling rate set at 500Hz. Following this, the envelope of the filtered data was computed using the Hilbert transform.
+Peaks that exceeded the mean value plus one standard deviation were identified, and valleys that went below the mean value minus
+one standard deviation were also identified. Peaks with an interval greater than 25ms from the next peak were selected by calculating
+differences between adjacent peaks. For each valid peak, the starting time point of the theta oscillation was determined by tracing
+back from the peak until it fell below the mean value plus one standard deviation, and similarly, the ending time point was identified by
+tracing forward until it fell below the mean value plus one standard deviation. The duration was constrained to be between 100ms and
+500ms.49
+For the extraction of instantaneous phase relationship between theta and gamma oscillation, the Hilbert-Huang transform was utilized to extract the continuous theta phase. At the peak timing points of gamma oscillations, the instantaneous phase of theta was
+extracted.50
+Multiple temporal coupling identification
+The temporal coupling of gamma oscillation relative to theta waves was analyzed. For the nesting of gamma to theta (which was
+defined as theta-gamma nesting), the time difference (DT) between the peak of the gamma and the negative phase of the closest
+theta wave.51,52 The nesting time window was set as 50 ms–100 ms. The theta-nested gamma was identified if the DT located
+Cell Reports 43, 114474, August 27, 2024 19
+ll
+OPEN ACCESS
+Article
+in this time window. Events who met the following standard were excluded: gamma which start or endpoint exceeds the range of
+theta activity, identified sequential events of less than 100ms, and more than one gamma wave nested to the same theta wave. Nesting index was calculated to quantitatively assess the changes in nesting activities of gamma to theta.36 Detailly, the time lag of
+gamma to their nearest theta was measured for each gamma event and the rate of gamma of which DT was within the nesting
+time window was calculated.
+After identifying the gamma oscillation activity in the local field potentials of BNST and NAc, the gamma-gamma coupling between
+the two functional areas was calculated as follows: For every gamma oscillation peak in the BNST, if a gamma oscillation peak in the
+NAc occurred within 50ms, they were determined to be gamma-gamma coupled. To exclude the influence of noise, the same calculation method was also applied within the BNST and NAc individually. If no coupling was found within a single nucleus, the data for
+that trial was considered valid. For the temporal distribution of gamma coupling, we calculated the distribution of the NAc’s gamma
+oscillation peak values centered around the time point of the BNST’s gamma oscillation peak. Triple-timing locking is defined as a
+gamma oscillation in the BNST that is simultaneously nested by temporal lobe theta activity and coupled with NAc gamma
+oscillation.53
+QUANTIFICATION AND STATISTICAL ANALYSIS
+Statistical analyses were calculated using GraphPad Prism 8.0. Experimenters who were blind to experimental conditions analyzed
+the data. Statistical features including the definitions and exact values of n (e.g., number of trials), p-values, and the type of statistical
+tests can be found in the Figure legends or Supplementary materials. For comparisons of two groups, we conducted paired t-tests.
+For comparisons among three groups, we conducted one-way ANOVAs with correction methods for multiple comparisons. For all
+analyses, statistical tests were two-tailed, and the confidence interval was set at 95%. For all figures, the boxplot was composed by
+the median, the approximate quartiles, and the lowest and highest data points. The horizontal line represented the mean. Statistical
+significance was set at p < 0.05. * indicated p < 0.05, ** indicated p < 0.01, *** indicated p < 0.001, **** indicated p < 0.0001.
+20
+Cell Reports 43, 114474, August 27, 2024
