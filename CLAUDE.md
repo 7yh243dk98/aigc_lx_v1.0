@@ -1,5 +1,19 @@
 # AIGC-M 项目说明书：脑电-情绪-音乐闭环干预系统
 
+## 0. 文档导航（新增）
+
+- `CLAUDE.md`：当前主线、近期目标、关键结论与高价值踩坑
+- `docs/README.md`：文档总索引
+- `docs/logs/`：按周研发日志（过程记录）
+- `docs/decisions/`：关键技术决策（ADR）
+- `docs/experiments/`：实验台账与模板
+- `docs/knowledge/`：知识库（Q&A 与可复用笔记）
+- `docs/knowledge/papers/`：论文结构化笔记（原文见 `mat/`）
+
+> 维护原则：`CLAUDE.md` 保持“短而新”，详细过程信息下沉到 `docs/`。
+
+---
+
 ## 1. 项目概述
 
 ### 1.1 项目背景
@@ -416,6 +430,15 @@ T5 输出: mean≈0, std≈0.27, range [-2.4, 2.0]    ← cross-attention 期望
 | loss 下降但听感不升反降 | 训练目标与主观听感不完全一致，且自回归采样误差累积 | 增加听感抽检 + CLAP/FAD 等指标，不再只看 loss |
 | 预训练模型仍能生成可听音频 | 说明模型能力在，问题在微调路径而非模型本身 | 先建立 text-conditioned 高质量基线，再逐步接入 EEG 条件 |
 
+### 8.10 输入特征信息量不足（当前核心瓶颈）
+| 现象 | 根因判断 | 下一步 |
+|------|----------|--------|
+| Adapter 生成音频只有"一个音节"，单调无变化 | `train_adapter.py` 使用 128d one-hot 作为输入（仅 4 个有效 bit），Adapter 无法从中学到有意义的映射 | **接入真实连续 EEG 特征**（128d 浮点向量） |
+| 不同情绪生成结果差异微弱 | one-hot 编码下 4 类情绪在 128d 空间中过于稀疏，MLP 难以学习细粒度差异 | 段级 EEG 特征包含丰富的频谱/时域信息，预期可显著改善 |
+| 历史端到端训练也存在类似问题 | `train_e2e.py` 使用离散 `emotion_id`（0-3）索引预计算嵌入，本质也是离散输入 | 两条路线的输入问题根源相同：缺乏真实连续特征 |
+
+**关键结论**：模型架构（MusicGen + Adapter）不是瓶颈，**输入数据**才是。当前最高优先级是与同学对接真实 EEG 特征格式并集成到训练流程中。
+
 ---
 
 ## 9. 架构演进记录
@@ -426,17 +449,28 @@ nn.Embedding(4, 768) → Linear → LayerNorm → GELU → Linear → expand to 
 ```
 **问题**：随机初始化产生的向量与 T5 编码器输出分布不匹配（std 差 5 倍），cross-attention 几乎忽略条件信号。训练 30 epoch 后 loss 从 5.54 仅降到 5.39，生成全是噪声。
 
-### v2：T5 文本编码初始化（当前版本）
+### v2：T5 文本编码初始化（端到端微调，已暂停）
 ```
 T5.encode("happy energetic upbeat cheerful music...") → [1, seq_len, 768]
 → 存为 nn.Parameter, 可微调
 → 附带 attention_mask buffer 处理不等长 padding
 ```
+**优势**：初始分布匹配、情绪自然区分、可微调。
+**问题**：微调 decoder 导致灾难性遗忘，生成退化为噪声。
+
+### v3：冻结主干 + 轻量 Adapter（当前版本）
+```
+EEG特征 (128d) → EmotionToTextAdapter (MLP)
+→ [B, seq_len, 768]（对齐 T5 文本嵌入空间）
+→ 冻结 MusicGen.generate()
+```
 **优势**：
-1. 初始分布与 T5 输出一致（std≈0.27），cross-attention 立即生效
-2. 不同情绪文本自然产生不同嵌入，无需学习基础区分
-3. 可微调参数，训练中进一步适应 EMOPIA 数据特征
-4. 兼顾了"用现有预训练知识"和"可学习定制化"
+1. MusicGen 权重完全不动，音质不退化
+2. 只训练 <5M 参数的 MLP，不易过拟合
+3. 条件嵌入对齐 T5 输出空间，MusicGen 直接"认识"
+4. 输入端可灵活替换（one-hot → 连续特征 → 时序特征）
+
+**当前局限**：输入仍为 one-hot，待接入真实 EEG 特征
 
 ---
 
@@ -494,6 +528,9 @@ T5.encode("happy energetic upbeat cheerful music...") → [1, seq_len, 768]
 | 2026-04-13 | generate 必须传 guidance_scale=1.0 | MusicGen 默认 guidance_scale=3.0，直接传 encoder_outputs 时缺少 unconditional 分支会导致 SDPA 维度错误 |
 | 2026-04-14 | **暂停 MusicGen 重微调，转向冻结主干 + 轻量条件适配** | 实测 finetuned 听感劣化为噪声，pretrained 仍具可听性；说明问题在微调策略而非模型本身 |
 | 2026-04-14 | 新建 `adapter_strategy_v1` 并隔离新方案 | 当前项目脚本较混乱，采用“新目录增量开发”降低回归风险 |
+| 2026-04-14 | **确认输入特征为核心瓶颈** | one-hot（128d 中仅 4 bit 有效信息）训练 Adapter 只能产生单调音频；必须接入真实连续 EEG 特征 |
+| 2026-04-14 | 采纳两阶段战略（MusicGen 先 → Diffusion 后） | 当前 MusicGen + Adapter 足以产出 TAFFC 论文；Diffusion 储备为顶刊升级路线，避免分散精力 |
+| 2026-04-14 | 输出三份关键文档（训练路线 / EEG 验证 / README） | 以文档驱动后续开发，确保方向明确、可复现、适合团队协作 |
 
 ---
 
@@ -504,13 +541,84 @@ T5.encode("happy energetic upbeat cheerful music...") → [1, seq_len, 768]
 - 文件顶部必须设置 `HF_ENDPOINT` 镜像
 - 情绪标签统一使用 0-3 (Q1-Q4) 整数编码
 - 音频采样率统一 32000Hz
-- 科研方向变更时，旧代码**搁置而非删除**（保留在 src/ 下）
+- 科研方向变更时，旧代码**搁置而非删除**（迁移到 `archive_legacy/`）
 - 优先使用成熟开源模型（MusicGen, MNE-Python），避免从零实现
 
 ---
 
 ## 13. 参考论文
 
-- `mat/Shen 等 - 2024` - AI音乐治疗精神障碍综述
-- `mat/Shen 等 - 2025` - AIGC闭环音乐干预增强情绪调节
-- `mat/Shen 等 - Echoes of the Brain` - EEG音乐重建（潜在空间对齐+引导扩散）
+| 论文 | 核心价值 |
+|------|---------|
+| `mat/Shen 等 - 2024` - AI音乐治疗精神障碍综述 | AIGC 闭环系统框架；MusicGen + EEG 情绪识别思路 |
+| `mat/Shen 等 - 2025` - AIGC闭环音乐干预增强情绪调节 | 3通道 EEG 轻量情绪识别 + 扩散模型条件音乐生成 |
+| `mat/Shen 等 - Echoes of the Brain` | **关键参考**：EEG-音乐对比学习对齐 + DiT ControlNet，小数据冻结主干策略 |
+| `mat/2405.09062v6` - Naturalistic Music Decoding from EEG | AudioLDM2 + ControlNet 从原始 EEG 重建音乐，无需手工预处理 |
+| `mat/PIIS2211124724008039` - Auditory Entrainment | theta-gamma 嵌套 + BNST-NAc 三重时间锁相机制；音乐抗抑郁与**主观享受**相关而非特定情绪 |
+
+### 13.1 论文借鉴要点汇总
+
+1. **冻结主干 + 轻量条件分支**：Echoes of the Brain、2405.09062v6 均采用此策略，与当前 Adapter 路线一致
+2. **对比学习跨模态对齐**：EEG → CLAP 共享空间，可在 Phase B 引入
+3. **theta 节律是核心指标**：4-8Hz 功率、wPLI 功能连接、theta-gamma nesting 三个层次
+4. **主观享受 > 特定情绪**：PIIS2211124724008039 论证了音乐抗抑郁的关键是享受度，支持"反向调节"设计
+5. **3通道 EEG 可行**：Shen 2025 证明 Fp1/Fp2/Fpz 即可完成情绪识别，降低实验门槛
+
+---
+
+## 14. Linux 重整记录（2026-04-17）
+
+### 14.1 目录重整原则
+
+- `src/` 仅保留当前主流程脚本（可直接复现实验）
+- 历史代码与临时实验统一迁入 `archive_legacy/`
+- 数据、输出、权重迁移到可跨系统共享盘 `/mnt/data/aigc_data`
+
+### 14.2 当前主流程脚本
+
+- `src/preprocess_emopia.py`
+- `src/train_e2e.py`
+- `src/generate_e2e.py`
+- `src/diagnose.py`
+- `adapter_strategy_v1/*`
+
+### 14.3 历史归档目录
+
+- `archive_legacy/src_legacy/`：从 `src/` 迁出的旧版主脚本
+- `archive_legacy/src_legacy_drop_snapshot/`：早期 `drop/` 快照
+- `archive_legacy/experiments/`：调试与验证脚本
+- `archive_legacy/notebooks/`：历史 notebook/checkpoint
+- `archive_legacy/misc/`：旧依赖记录与零散文件
+
+### 14.4 Linux 路径映射
+
+- `res -> /mnt/data/aigc_data/datasets/res`
+- `output -> /mnt/data/aigc_data/outputs/output`
+- `adapter_strategy_v1/checkpoints -> /mnt/data/aigc_data/checkpoints/adapter_strategy_v1/checkpoints`
+- `mat -> /mnt/data/aigc_data/refs/mat`
+
+### 14.5 环境管理
+
+- 已从仓库内 `venv/` 迁移到 Miniconda
+- 环境文件：`environment.yml`
+- 推荐环境名：`aigc-m-py311`
+
+### 14.6 执行日志（补充）
+
+| 时间 | 操作 | 结果 |
+|------|------|------|
+| 2026-04-17 | 创建共享盘标准目录 `/mnt/data/aigc_data/{datasets,checkpoints,outputs,cache}` | 完成，作为 Linux/Windows 共用数据根目录 |
+| 2026-04-17 | 将 `res/` 迁移到 `/mnt/data/aigc_data/datasets/res` 并在仓库根目录建立软链接 | 完成，原有脚本路径保持兼容 |
+| 2026-04-17 | 将 `output/` 迁移到 `/mnt/data/aigc_data/outputs/output` 并建立软链接 | 完成，输出目录外置 |
+| 2026-04-17 | 将 `adapter_strategy_v1/checkpoints/` 迁移到共享盘并建立软链接 | 完成，训练权重外置 |
+| 2026-04-17 | 新增一键重整脚本 `scripts/reorganize_linux.sh` | 完成，可重复执行，支持新机器快速恢复目录结构 |
+| 2026-04-17 | 删除仓库内旧 `venv/`（约 6.6G） | 完成，项目体积显著下降 |
+| 2026-04-17 | 创建 Conda 环境 `aigc-m-py311` 并验证关键依赖导入 | 完成，`transformers/torch/pretty_midi/scipy` 导入正常 |
+| 2026-04-17 | 将历史代码与实验脚本迁移至 `archive_legacy/` | 完成，主线目录与历史目录职责分离 |
+
+### 14.7 结构化归档说明（用于论文“方法演进”）
+
+- 保留“当前可复现主流程”在 `src/` 与 `adapter_strategy_v1/`，用于结果复验和论文复现实验。
+- 保留“历史尝试与失败路径”在 `archive_legacy/`，用于撰写方法演进、负结果分析与决策依据。
+- 保留 `src_legacy_drop_snapshot/` 原始快照，避免“回忆偏差”导致的历史版本失真。
+- 目录级别完成“主线/归档”分离后，后续新增实验可先在主线开发，确认弃用后再迁入归档。

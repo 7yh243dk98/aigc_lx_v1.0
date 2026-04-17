@@ -1,0 +1,10 @@
+#audioccraft
+
+
+transformers 
+torch 
+torchaudio 
+scipy
+
+
+#tensorboard transformers 记得学习

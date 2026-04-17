@@ -1,0 +1,219 @@
+第一阶段：读论文 + 建基础（1-2周）
+天数	做什么	具体内容
+1-3天	读你mat文件夹里那篇综述	"A First Look at Generative AI Based Music Therapy"（你现在打开的这篇），了解整个领域全貌
+4-5天	读闭环那篇	"Enhancing Emotion Regulation...AIGC-Based Closed-Loop"，重点看系统架构图和音乐生成部分
+6-7天	读脑电重建音乐那篇	"Echoes of the Brain"，重点看他用了什么模型（扩散模型+隐空间对齐）
+读论文的重点：不要逐字读，重点看 Introduction（了解动机）→ Method（看模型结构图）→ Experiments（看用了什么数据集和指标）
+📅 第二阶段：跑通一个音乐生成demo（2-3周）
+先不碰EEG，单纯把音乐生成跑起来：
+plaintext
+步骤1：选一个音乐生成框架
+       ↓
+步骤2：用官方demo生成一段音乐
+       ↓
+步骤3：尝试加入条件控制（比如"生成一段悲伤的音乐"）
+推荐入门框架（由易到难）：
+框架	难度	说明
+Music Transformer (Magenta)	⭐⭐	Google的，有现成代码和预训练模型
+MusicVAE	⭐⭐	同样Magenta，VAE结构，好理解
+Riffusion	⭐⭐	基于Stable Diffusion生成音乐频谱图
+MusicGen (Meta)	⭐⭐⭐	效果好，支持文本条件控制
+建议先从 MusicGen 开始，因为：
+有 HuggingFace 现成代码，几行就能跑
+支持条件输入（以后换成情绪向量）
+效果好，论文里好对比
+📅 第三阶段：加入情绪条件（2-3周）
+python
+# 目标：从这样
+music = model.generate("a calm relaxing melody")
+
+# 变成这样
+emotion_feature = torch.randn(128)  # 先用假数据
+music = model.generate(condition=emotion_feature)
+🎯 你今天就能做的
+读你打开的那篇论文，花2-3小时，重点看方法部分
+搜一下Lin Shen的联系方式，加个微信，问问他代码有没有开源
+确认你的Python环境能用
+
+
+
+
+
+
+ 短期（出成果）：直接用MusicGen，不用从头学那些
+MusicGen内部已经帮你封装好了，你不需要自己从零搭Diffusion/VAE/GAN。就像你用PyTorch不需要自己写反向传播一样。
+plaintext
+你要做的：
+  调用MusicGen → 改条件输入 → 出结果 → 写论文
+
+你不需要做的：
+  自己写扩散过程 → 自己写VAE编解码器 → 自己训练GAN
+📚 长期（科研能力）：需要理解原理，但不急
+模型	你需要了解的程度	什么时候学
+Transformer	⭐⭐⭐⭐ 必须理解	现在 - MusicGen就是基于它的
+VAE	⭐⭐⭐ 理解思想	后面 - 论文里要解释为什么选这个不选那个
+Diffusion	⭐⭐⭐ 理解思想	后面 - 你导师组那篇"Echoes of the Brain"用的就是扩散模型
+GAN	⭐⭐ 了解即可	不急 - 音乐生成领域GAN用得越来越少了
+💡 实际建议
+plaintext
+现在                           2个月后                    半年后
+ │                               │                         │
+ ├─ 直接用MusicGen跑实验          ├─ 理解VAE/Diffusion原理   ├─ 能自己改模型结构
+ ├─ 理解Transformer注意力机制     ├─ 读懂师兄的论文代码       ├─ 设计自己的生成方案
+ └─ 出第一版结果                  └─ 写论文相关工作部分       └─ 冲更好的论文
+
+
+
+EEG情绪特征(128维向量)
+        ↓
+  ┌─────────────┐
+  │ 你设计的映射网络 │  ← 这是你的创新点
+  │ (Emotion→Music) │
+  └──────┬──────┘
+         ↓
+    MusicGen生成音乐  ← 这只是工具
+         ↓
+    评估生成质量
+
+
+    第1步：跑通MusicGen（你现在要做的，1周）
+  ↓
+第2步：设计情绪特征→音乐条件的映射模块（核心工作，2-4周）
+  ↓
+第3步：训练和实验（2-4周）
+  ↓
+第4步：写论文
+
+ 具体创新点可以是
+映射网络设计 - 怎么把128维情绪特征转换成MusicGen能理解的条件？这个转换模块就是你的贡献
+情绪-音乐对齐 - 设计一个损失函数，让生成的音乐和目标情绪匹配
+评估体系 - 设计主观+客观评价指标，证明你的方法生成的音乐确实和情绪对应
+
+
+
+从输出里你需要记住的就两个数字：
+位置	维度	含义
+text_encoder 输出	768维	文本编码后的向量
+enc_to_dec_proj	768 → 1024维	转换后送给decoder
+💡 这意味着什么？
+以后你要做的事就是：
+python
+
+# 现在：文本 → 768维向量 → decoder生成音乐
+text → text_encoder → [768维] → enc_to_dec_proj → [1024维] → decoder → 音乐
+
+# 你要改成：EEG特征 → 768维向量 → decoder生成音乐  
+EEG特征(128维) → 你的映射网络 → [768维] → enc_to_dec_proj → [1024维] → decoder → 音乐
+
+
+你只需要写一个小网络，把128维的EEG特征变成768维的向量，替换掉text_encoder的输出就行。 decoder和audio_encoder完全不用动。
+📌 一句话总结
+MusicGen = 文本编码器(768维) + 维度转换 + 音乐生成器 + 音频解码器你的工作 = 用情绪编码器(128→768维) 替换掉文本编码器
+现在清楚了吗？
+
+
+审稿人可能的问题	你需要准备的回答
+你的EmotionEncoder和直接用文本比，好在哪？	实验数据证明
+为什么不直接把情绪标签转成文本prompt？	向量比文本更细粒度、可扩展到连续值
+你用的是真实EEG数据吗？	最好有，至少用公开EEG数据集验证
+生成的音乐真的能影响情绪吗？	用户实验/问卷
+📌 能发什么级别
+完成度	能投的目标
+只有映射网络+基础实验	EI会议、普通期刊
++ 公开EEG数据集验证	不错的SCI期刊
++ 用户实验证明干预效果	好的SCI期刊
++ 和同学的SNN对接成完整系统	冲你导师组常发的IEEE Trans
+
+
+✅ 已完成                          → 待做
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ MusicGen demo跑通
+✅ 理解模型结构
+✅ EmotionEncoder pipeline跑通
+✅ 验证不同向量→不同音乐
+                                    ↓
+                              ┌─────────────┐
+                              │ 第5步 准备数据 │ ← 1周
+                              └──────┬──────┘
+                                     ↓
+                              ┌─────────────┐
+                              │ 第6步 训练映射 │ ← 2-3周（核心）
+                              └──────┬──────┘
+                                     ↓
+                              ┌─────────────┐
+                              │ 第7步 实验评估 │ ← 1-2周
+                              └──────┬──────┘
+                                     ↓
+                              ┌─────────────┐
+                              │ 第8步 写论文  │ ← 2-3周
+                              └─────────────┘
+第5步：准备数据（1周）
+任务	说明
+下载情绪音乐数据集（EMOPIA/DEAM）	带情绪标签的音乐
+用MusicGen的EnCodec提取音乐token	作为训练的ground truth
+构建训练对：情绪标签 → 音乐	数据加载器
+第6步：训练EmotionEncoder（2-3周，核心工作）
+任务	说明
+设计损失函数	让生成的音乐和目标情绪匹配
+训练映射网络	冻结MusicGen，只训练EmotionEncoder
+调参优化	学习率、网络结构等
+第7步：实验评估（1-2周）
+实验	目的
+不同情绪生成对比	证明能区分情绪
+和文本控制baseline对比	证明向量控制的优势
+主观听感评价（问卷）	找同学听，打分
+客观指标（FAD等）	生成质量量化
+第8步：写论文（2-3周）
+部分	内容
+Introduction	为什么要用EEG特征控制音乐生成
+Related Work	EEG情绪识别 + 音乐生成 综述
+Method	EmotionEncoder设计 + MusicGen pipeline
+Experiments	上面的实验结果
+Conclusion	总结 + 未来做闭环
+
+
+
+详细实现路线 + 对应知识点
+plaintext
+第5步          第6步            第7步         第8步
+准备数据 ──→ 训练映射网络 ──→ 实验评估 ──→ 写论文
+ 1周          2-3周           1-2周        2-3周
+第5步：准备数据（1周）
+具体任务	需要学的知识	学习资源
+下载EMOPIA数据集	了解MIDI格式	EMOPIA GitHub主页
+用EnCodec把音乐编码成token	理解音频tokenization	MusicGen论文第2.1节
+构建数据集：情绪标签↔音乐token对	PyTorch Dataset/DataLoader	PyTorch官方教程
+你需要掌握：
+python
+# 1. PyTorch数据加载（必学）
+class EmotionMusicDataset(Dataset):
+    def __init__(self, ...):
+        ...
+    def __getitem__(self, idx):
+        emotion_label = ...   # 情绪标签
+        music_tokens = ...    # 对应音乐的编码
+        return emotion_label, music_tokens
+第6步：训练EmotionEncoder（2-3周，核心）
+具体任务	需要学的知识	优先级
+把情绪标签转成128维向量	Embedding层	⭐⭐⭐
+设计损失函数	MSE Loss / 对比学习	⭐⭐⭐
+训练循环	PyTorch训练流程	⭐⭐⭐⭐
+冻结MusicGen只训练映射网络	requires_grad=False	⭐⭐⭐
+调参（学习率、batch size）	基本调参经验	⭐⭐
+训练思路：
+plaintext
+输入：情绪标签(如"sad")
+  ↓
+EmotionEncoder → 768维条件向量
+  ↓
+MusicGen decoder → 生成音乐token
+  ↓
+和真实音乐token算损失 ← ground truth
+  ↓
+反向传播，更新EmotionEncoder
+第7步：实验评估（1-2周）
+实验	需要学的知识
+FAD（Fréchet Audio Distance）	音频生成质量指标
+情绪分类准确率	用分类器验证生成音乐的情绪
+主观评价问卷	找10-20人听，用Likert量表打分
+消融实验	不同映射网络结构的对比

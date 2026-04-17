@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+.pytest_cache/
+.mypy_cache/
+
+# Model weights (too large for GitHub)
+*.safetensors
+*.bin
+*.pt
+*.pth
+!requirements.txt
+
+# Data files
+*.sf2
+*.mid
+*.midi
+*.wav
+*.mp3
+*.flac
+
+# FluidSynth binaries
+fluidsynth-*/
+
+# Externalized data entrypoints (symlinks in this repo)
+res
+output
+mat
+adapter_strategy_v1/checkpoints
+
+# Caches
+.cache/
+huggingface/
+wandb/
+mlruns/
+
+# Runtime logs
+*.log
+
+# IDE
+.vscode/
+.cursor/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,16 @@
+name: aigc-m-py311
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - scipy
+  - pytorch
+  - torchaudio
+  - tqdm
+  - pip:
+      - transformers
+      - pretty_midi

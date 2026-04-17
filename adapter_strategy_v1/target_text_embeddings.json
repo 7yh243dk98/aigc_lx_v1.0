@@ -1,0 +1,13 @@
+{
+  "model_name": "facebook/musicgen-small",
+  "shape_hidden_states": [
+    4,
+    12,
+    768
+  ],
+  "shape_attention_mask": [
+    4,
+    12
+  ],
+  "output_path": "D:\\pyprojects\\aigc-m\\adapter_strategy_v1\\target_text_embeddings.pt"
+}
