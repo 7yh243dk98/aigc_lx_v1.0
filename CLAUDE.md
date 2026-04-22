@@ -12,6 +12,31 @@
 
 > 维护原则：`CLAUDE.md` 保持“短而新”，详细过程信息下沉到 `docs/`。
 
+## 0.1 当前主方向快照（2026-04）
+
+**科学问题**：用脑状态相关的**连续条件**（目标 **128 维 float**）控制音乐生成，服务**情绪调节**；长期用**离线闭环**（前测 EEG → 生成 → 播放 → 后测 EEG + 问卷/频段指标）验证，论文从会议保底到 **IEEE TAFFC** 冲刺。
+
+**技术路线（已否决 vs 当前）**：
+
+- **已否决**：大范围微调 MusicGen 解码器（小数据下音质崩、灾难性遗忘）。
+- **当前主力**：**冻结 MusicGen**，只训练**轻量 Adapter**，把条件送入模型可用的 **T5 隐空间**（`[B, seq_len, 768]` + `attention_mask`），推理时 **`guidance_scale=1.0`**。
+- **核心瓶颈**：条件的信息量——128 维里若仅有 **one-hot 情绪（4 bit 有效）** 不足以支撑丰富生成；**必须接入真实连续特征**（如 SNN **分类头前的 embedding**，或经约定的 `Linear(D→128)`）。
+
+**系统数据流**：
+
+- **音乐侧**：**EMOPIA** + 已构建 token（`res/.../emopia_tokens.pt`）——用于把「连续条件 → 音乐」**练通与做基线**。
+- **EEG 侧（协作）**：同学用**学校/公开数据集**训练 SNN（抑郁相关任务），**不与 EMOPIA 逐条 id 对齐**属正常；**严格配对**放在**自采闭环实验**（同被试前后测），而非强求与 EMOPIA `name` 一一对应。
+- **导出约定（v0.1）**：至少 `dataset`、`subject_id`、`trial_id`、`feature`（`float32`，`(128,)` 或原始 `(D,)` 并说明谁负责投影）+ 可选 `snn_version`；详见协作消息与后续 `docs/decisions/`。
+
+**训练实现注意**：
+
+- `adapter_strategy_v1/continuous_condition_training_plan.md` 中理想损失含 **L_token + L_embed** 等；**当前 `train_adapter.py` 主线为**：Adapter 输出与 **T5 文本锚点嵌入**的 **Masked MSE**（`target_text_embeddings.pt`）。**加 token 重建损失**属增强项，宜在独立分支试验，避免无声替换主线。
+- **生成**：`adapter_strategy_v1/generate_adapter.py` 使用**本地** `res/musicgen_finetuned` 加载 MusicGen，避免误用远程未适配权重。
+
+**近期优先级**：与协作方锁定 **feature v0.1 + 小样例文件** → 数据加载强制或明确占位策略 → `docs/experiments/` 记基线 → 并行推进伦理/设备与闭环方案。
+
+**文献总览**：`docs/knowledge/papers/2026-04-mat-library-overview.md`。
+
 ---
 
 ## 1. 项目概述

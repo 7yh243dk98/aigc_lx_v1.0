@@ -1,3 +1,4 @@
+import argparse
 import json
 import os
 from pathlib import Path
@@ -15,16 +16,43 @@ EMOTION_TEXTS = {
     3: "calm peaceful relaxing ambient music with soft tone",
 }
 
-MODEL_NAME = "facebook/musicgen-small"
+DEFAULT_HUB = "facebook/musicgen-small"
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_PATH = PROJECT_ROOT / "adapter_strategy_v1" / "target_text_embeddings.pt"
 META_PATH = PROJECT_ROOT / "adapter_strategy_v1" / "target_text_embeddings.json"
 
 
+def parse_args() -> argparse.Namespace:
+    p = argparse.ArgumentParser(
+        description="导出四类情绪英文的 T5 last_hidden_state，供 train_adapter 作监督目标"
+    )
+    p.add_argument(
+        "--model-dir",
+        type=str,
+        default=None,
+        help="本地 MusicGen 目录（如 res/musicgen_finetuned）；默认用 Hub 上的 facebook/musicgen-small",
+    )
+    return p.parse_args()
+
+
 def main() -> None:
+    args = parse_args()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    processor = AutoProcessor.from_pretrained(MODEL_NAME)
-    model = MusicgenForConditionalGeneration.from_pretrained(MODEL_NAME).to(device)
+
+    if args.model_dir:
+        model_src = (PROJECT_ROOT / args.model_dir).resolve()
+        if not model_src.is_dir():
+            raise FileNotFoundError(f"--model-dir 不是目录: {model_src}")
+        load_path = str(model_src)
+        processor = AutoProcessor.from_pretrained(load_path)
+        model = MusicgenForConditionalGeneration.from_pretrained(load_path).to(device)
+        audit_name = load_path
+    else:
+        load_path = DEFAULT_HUB
+        processor = AutoProcessor.from_pretrained(load_path)
+        model = MusicgenForConditionalGeneration.from_pretrained(load_path).to(device)
+        audit_name = DEFAULT_HUB
+
     model.eval()
 
     rows = [EMOTION_TEXTS[i] for i in range(4)]
@@ -40,20 +68,20 @@ def main() -> None:
     with open(META_PATH, "w", encoding="utf-8") as f:
         json.dump(
             {
-                "model_name": MODEL_NAME,
+                "model_source": audit_name,
                 "shape_hidden_states": list(hidden.shape),
                 "shape_attention_mask": list(mask.shape),
-                "output_path": OUTPUT_PATH,
+                "output_path": str(OUTPUT_PATH),
             },
             f,
             ensure_ascii=False,
             indent=2,
         )
 
+    print(f"model_source={audit_name}")
     print(f"saved targets -> {OUTPUT_PATH}")
     print(f"saved metadata -> {META_PATH}")
 
 
 if __name__ == "__main__":
     main()
-

@@ -7,6 +7,7 @@
 - 论文原文件统一放在：`mat/`（已映射到外部盘）
 - 每篇论文对应一个笔记文件：`YYYYMMDD-short-title.md`
 - 新建笔记可复制 `TEMPLATE.md`
+- 当前 `mat/` 批量通读总览：`2026-04-mat-library-overview.md`
 
 ## 建议字段
 

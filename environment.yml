@@ -14,3 +14,4 @@ dependencies:
   - pip:
       - transformers
       - pretty_midi
+      - pydantic>=2.0

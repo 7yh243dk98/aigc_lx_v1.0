@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/aigc-m/eeg_feature_export_v0.1.json",
+  "title": "EEG feature export record v0.1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["dataset", "subject_id", "segment_id", "feature"],
+  "properties": {
+    "dataset": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Corpus name, ASCII"
+    },
+    "subject_id": {
+      "description": "Subject identifier",
+      "oneOf": [{ "type": "string", "minLength": 1 }, { "type": "integer" }]
+    },
+    "segment_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unique within dataset (trial or window)"
+    },
+    "trial_id": { "type": "string" },
+    "feature": {
+      "type": "array",
+      "items": { "type": "number" },
+      "minItems": 1,
+      "description": "Prefer length 128; else raw penultimate dim D"
+    },
+    "label": { "type": "string" },
+    "emotion_id": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3,
+      "description": "Optional: EMOPIA 4-class target index for adapter training"
+    },
+    "window_start_ms": { "type": "integer" },
+    "window_end_ms": { "type": "integer" },
+    "snn_version": { "type": "string" },
+    "feature_dim": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Required when len(feature) != 128; must match len(feature)"
+    },
+    "feature_dtype": { "type": "string", "const": "float32" },
+    "feature_space": { "type": "string" },
+    "export_version": { "type": "string" }
+  }
+}
