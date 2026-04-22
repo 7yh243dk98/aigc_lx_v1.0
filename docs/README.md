@@ -7,7 +7,7 @@
 - `logs/`：按周记录研发进展、问题与下周计划
 - `decisions/`：关键技术决策（ADR 风格）
 - `experiments/`：实验记录模板与实验台账（例：`2026-04-EEG-adapter-musicgen-baseline.md`）
-- `knowledge/`：可复用知识库（Q&A、阅读摘要、术语笔记）
+- `knowledge/`：可复用知识库（Q&A、阅读摘要、术语笔记；**研究草稿唯一维护在 `knowledge/qa/`，不另建重复目录**）
 - `knowledge/papers/`：论文结构化笔记（PDF 原文在 `mat/`）
 - `contracts/`：跨协作数据契约（如 EEG 特征导出 v0.1）
 

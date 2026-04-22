@@ -12,6 +12,7 @@ venv/
 *.bin
 *.pt
 *.pth
+
 !requirements.txt
 
 # Data files
@@ -36,6 +37,11 @@ adapter_strategy_v1/checkpoints
 huggingface/
 wandb/
 mlruns/
+
+# Local ad-hoc runs & embedding filename backups (not the canonical *.pt in-repo)
+.tmp_eeg_train/
+*.bak_hub_small
+**/*.pt.bak*
 
 # Runtime logs
 *.log

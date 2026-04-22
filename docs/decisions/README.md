@@ -5,7 +5,7 @@
 ## 命名规则
 
 - `NNNN-short-title.md`
-- 示例：`0001-repo-reorg-and-data-externalization.md`
+- 示例：`0001-repo-reorg-and-data-externalization.md`、`0002-github-archive-merged-into-main-docs.md`
 
 ## 推荐模板
 

@@ -8,6 +8,7 @@
 - 每篇论文对应一个笔记文件：`YYYYMMDD-short-title.md`
 - 新建笔记可复制 `TEMPLATE.md`
 - 当前 `mat/` 批量通读总览：`2026-04-mat-library-overview.md`
+- 例外：`PIIS2211124724008039.txt` 为 **Cell Reports** 论文英文全文摘录（自旧 `github_archive/mat` 迁入，便于检索；PDF 仍以 `mat/` 为准）。
 
 ## 建议字段
 

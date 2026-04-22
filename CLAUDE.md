@@ -120,17 +120,18 @@ EEG 验证实验（theta/wPLI 指标）→ 闭环反馈（未来）
 
 ```
 aigc-m/
+├── README.md                 # 对外简介与入口（链接 CLAUDE / docs / adapter）
 ├── CLAUDE.md                 # 本文件：项目全局说明
+├── environment.yml            # Conda 环境（推荐；不再用仓库内 venv）
+├── docs/                      # 周志、ADR、实验台账、数据契约
+│   ├── knowledge/qa/         # 研究思路与 Q&A 草稿（唯一维护处）
+│   └── ...
 ├── src/                      # 源代码
 │   ├── preprocess_emopia.py  # ★ 核心：MIDI → WAV → EnCodec tokens 预处理
 │   ├── train_e2e.py          # ★ 核心：MusicGen 端到端微调训练
 │   ├── generate_e2e.py       # ★ 核心：微调后生成情绪音乐
-│   ├── diagnose.py           # 诊断脚本（分布比较、pipeline 验证）
-│   ├── aigc.py               # 旧版：文本条件 demo（已搁置）
-│   ├── preprocess.py         # 旧版：v2 文本嵌入预处理（已搁置）
-│   ├── train.py              # 旧版：v2 Transformer EmotionEncoder（已搁置）
-│   └── emotion_to_music.py   # 旧版：情绪到音乐映射（已搁置）
-├── res/                      # 资源与数据
+│   └── diagnose.py           # 诊断脚本（分布比较、pipeline 验证）
+├── res/                      # 资源与数据（多通过软链指外置盘）
 │   ├── emopia_data/EMOPIA_2.2/  # EMOPIA 数据集
 │   │   ├── midis/               # 1071 个 MIDI 文件
 │   │   └── label.csv            # 情绪标签 (Q1-Q4)
@@ -152,9 +153,8 @@ aigc-m/
 │   ├── checkpoints/             # Adapter 训练权重
 │   ├── continuous_condition_training_plan.md  # 连续特征训练路线文档
 │   └── eeg_validation_protocol_v1.md         # EEG 验证实验草案
-├── Q@A/                         # 研究思路记录
-├── mat/                         # 参考论文
-└── venv/                        # Python 虚拟环境
+├── mat/                         # 参考论文（外置/软链）
+└── archive_legacy/              # 历史代码，非主流程
 ```
 
 ---
@@ -579,7 +579,7 @@ EEG特征 (128d) → EmotionToTextAdapter (MLP)
 | `mat/Shen 等 - 2025` - AIGC闭环音乐干预增强情绪调节 | 3通道 EEG 轻量情绪识别 + 扩散模型条件音乐生成 |
 | `mat/Shen 等 - Echoes of the Brain` | **关键参考**：EEG-音乐对比学习对齐 + DiT ControlNet，小数据冻结主干策略 |
 | `mat/2405.09062v6` - Naturalistic Music Decoding from EEG | AudioLDM2 + ControlNet 从原始 EEG 重建音乐，无需手工预处理 |
-| `mat/PIIS2211124724008039` - Auditory Entrainment | theta-gamma 嵌套 + BNST-NAc 三重时间锁相机制；音乐抗抑郁与**主观享受**相关而非特定情绪 |
+| `mat/PIIS2211124724008039` - Auditory Entrainment | theta-gamma 嵌套 + BNST-NAc 三重时间锁相机制；音乐抗抑郁与**主观享受**相关而非特定情绪；英文摘录见 `docs/knowledge/papers/PIIS2211124724008039.txt` |
 
 ### 13.1 论文借鉴要点汇总
 
